@@ -1,0 +1,14 @@
+.env
+.env.local
+.env.*.local
+
+node_modules/
+dist/
+build/
+
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+.claude/
+.DS_Store
