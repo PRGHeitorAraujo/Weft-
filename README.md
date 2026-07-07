@@ -212,28 +212,43 @@ vazio. Mudanças de schema feitas depois continuam precisando ser aplicadas à
 mão (ver nota abaixo sobre `init.sql`).
 
 **Frontend na Vercel:** aponte o Root Directory do projeto para `frontend/`
-(Vite é autodetectado, sem `vercel.json` necessário). Configure
-`VITE_API_URL` nas variáveis de ambiente da Vercel com a URL pública do
-backend no Railway.
+(Vite é autodetectado, sem `vercel.json` necessário).
 
-### Modo demo estático (só Vercel, sem backend)
+### Modo demo estático é o padrão do deploy na Vercel
 
-Para publicar apenas uma vitrine navegável dos 3 perfis de exemplo — sem
-Railway, sem Postgres, sem cadastro — configure na Vercel:
+O build de produção (`npm run build`) é **modo demo por padrão** — sem
+Railway, sem Postgres, sem cadastro, e sem nenhuma chamada de rede para
+backend. Isso é deliberado: `import.meta.env.VITE_DEMO_MODE` do Vite é
+sempre string (nunca um boolean de verdade), então em vez de checar
+`=== "true"` (que fica falso, e portanto cai silenciosamente no backend
+real, tentando `localhost:8000` em produção, se a variável não for
+injetada — ex. Root Directory da Vercel mal configurado) o código checa
+`!== "false"`. Resultado: **qualquer build sem a variável explicitamente
+definida como `"false"` publica a demo estática**, nunca a versão com
+login/backend por acidente.
+
+Os dados dos 3 perfis vêm de `frontend/src/demo-data/*.json` (exportados do
+banco local com `backend/app/export_demo_data.py`), o app abre direto num
+seletor de perfil em vez de tela de login, e toda ação de escrita
+(criar/editar/excluir insight, criar aresta, timer de leitura, editar
+livro) fica oculta — inclusive a busca por similaridade semântica, que
+depende do backend. Grafo, filtros por tema/livro e leitura de insights
+funcionam inteiramente a partir do JSON estático, sem nenhuma chamada de
+rede — confirmável na aba Network do navegador (zero requisições para
+`localhost` ou qualquer host de API).
+
+**Para publicar a versão real (com login e backend)** em vez da demo —
+por exemplo, um ambiente de staging que efetivamente conversa com o
+Railway — defina explicitamente nas variáveis de ambiente da Vercel:
 
 ```
-VITE_DEMO_MODE=true
+VITE_DEMO_MODE=false
+VITE_API_URL=https://<seu-backend-no-railway>
 ```
 
-e não defina `VITE_API_URL` (é ignorado nesse modo). O build resultante de
-`npm run build` é 100% estático: os dados dos 3 perfis vêm de
-`frontend/src/demo-data/*.json` (exportados do banco local com
-`backend/app/export_demo_data.py`), o app abre direto num seletor de perfil
-em vez de tela de login, e toda ação de escrita (criar/editar/excluir
-insight, criar aresta, timer de leitura, editar livro) fica oculta —
-inclusive a busca por similaridade semântica, que depende do backend.
-Grafo, filtros por tema/livro e leitura de insights funcionam inteiramente
-a partir do JSON estático, sem nenhuma chamada de rede.
+Sem isso, qualquer deploy na Vercel (inclusive um "Root Directory" mal
+apontado, que faz a Vercel não injetar variável nenhuma) publica a demo —
+o comportamento seguro por padrão.
 
 Para reexportar os perfis depois de editar os dados de exemplo no banco
 local:

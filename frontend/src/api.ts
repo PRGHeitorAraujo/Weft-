@@ -2,10 +2,13 @@ import type { Book, Chapter, Edge, EdgeKind, Insight, InsightKind, ReadingSessio
 import { demoApi } from "./demoApi";
 
 const configuredApiUrl = import.meta.env.VITE_API_URL as string | undefined;
-// Explicit opt-in only — never inferred from PROD/missing API URL, so a
-// misconfigured deploy fails loudly (network error) instead of silently
-// serving static demo data as if it were the real backend.
-export const DEMO_MODE = import.meta.env.VITE_DEMO_MODE === "true";
+// Demo mode is the default. import.meta.env.VITE_DEMO_MODE is always a
+// string (never a real boolean) — comparing it to the literal string
+// "false" is the only way to opt out, for local dev against the real
+// backend. A build where the env var is missing entirely (e.g. a
+// misconfigured Vercel project) still gets the safe, backend-free demo
+// instead of silently trying to fetch http://localhost:8000 in production.
+export const DEMO_MODE = import.meta.env.VITE_DEMO_MODE !== "false";
 const API_URL = configuredApiUrl ?? "http://localhost:8000";
 const TOKEN_KEY = "weft_token";
 
