@@ -25,7 +25,7 @@ export default function Insights({ insights, books, onOpen }: Props) {
 
   return (
     <main style={{ flex: 1, overflowY: "auto" }}>
-      <div className="fade-up" style={{ maxWidth: 900, margin: "0 auto", padding: "52px 40px 64px" }}>
+      <div className="fade-up wf-page" style={{ maxWidth: 900, margin: "0 auto" }}>
         <h1 style={{ margin: 0, fontSize: 25, fontWeight: 600, letterSpacing: "-0.02em" }}>Insights</h1>
         <p style={{ margin: "8px 0 0", fontSize: 14.5, color: "var(--mut)" }}>Toda a sua rede de ideias, em ordem de escrita.</p>
 
@@ -44,7 +44,7 @@ export default function Insights({ insights, books, onOpen }: Props) {
           })}
         </div>
 
-        <div style={{ marginTop: 20, display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
+        <div className="wf-insights-grid" style={{ marginTop: 20 }}>
           {filtered.map((it) => {
             const ty = TYPES[it.kind];
             const book = bookById[it.book_id];

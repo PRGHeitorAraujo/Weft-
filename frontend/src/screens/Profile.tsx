@@ -34,8 +34,8 @@ export default function Profile({ user, books, insights, onOpenBook, onNavigateI
 
   return (
     <main style={{ flex: 1, overflowY: "auto" }}>
-      <div className="fade-up" style={{ maxWidth: 780, margin: "0 auto", padding: "52px 40px 64px" }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
+      <div className="fade-up wf-page" style={{ maxWidth: 780, margin: "0 auto" }}>
+        <div className="wf-detail-header">
           <div style={{ width: 56, height: 56, borderRadius: "50%", background: "var(--accent-soft)", border: "1px solid var(--accent-line)", color: "var(--accent)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 20, fontWeight: 700, flexShrink: 0 }}>
             {initial}
           </div>
@@ -43,12 +43,14 @@ export default function Profile({ user, books, insights, onOpenBook, onNavigateI
             <h1 style={{ margin: 0, fontSize: 22, fontWeight: 600, letterSpacing: "-0.02em" }}>{user.display_name || user.email.split("@")[0]}</h1>
             <div style={{ marginTop: 2, fontSize: 13.5, color: "var(--mut)" }}>{user.email}</div>
           </div>
-          <button
-            onClick={onLogout}
-            style={{ flexShrink: 0, padding: "9px 16px", border: "1px solid var(--line)", borderRadius: 8, background: "#fff", color: "var(--mut)", fontSize: 13, fontWeight: 600 }}
-          >
-            {DEMO_MODE ? "Trocar perfil" : "Sair da conta"}
-          </button>
+          <div className="wf-actions">
+            <button
+              onClick={onLogout}
+              style={{ flexShrink: 0, padding: "9px 16px", border: "1px solid var(--line)", borderRadius: 8, background: "#fff", color: "var(--mut)", fontSize: 13, fontWeight: 600 }}
+            >
+              {DEMO_MODE ? "Trocar perfil" : "Sair da conta"}
+            </button>
+          </div>
         </div>
 
         <div style={{ marginTop: 28, display: "flex", gap: 12, flexWrap: "wrap" }}>

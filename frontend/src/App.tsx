@@ -86,7 +86,7 @@ function AppShell() {
   const readingBook = readingBookId ? books.find((b) => b.id === readingBookId) ?? null : null;
 
   return (
-    <div style={{ display: "flex", height: "100vh", overflow: "hidden", background: "var(--bg)" }}>
+    <div className="wf-app-shell" style={{ display: "flex", height: "100vh", overflow: "hidden", background: "var(--bg)" }}>
       <Sidebar
         screen={screen}
         onNavigate={navigate}

@@ -37,14 +37,14 @@ export default function Library({ insights, books, themeCount, userName, onOpen,
 
   return (
     <main style={{ flex: 1, overflowY: "auto" }}>
-      <div className="fade-up" style={{ maxWidth: 820, margin: "0 auto", padding: "52px 40px 64px" }}>
+      <div className="fade-up wf-page" style={{ maxWidth: 820, margin: "0 auto" }}>
         <h1 style={{ margin: 0, fontSize: 25, fontWeight: 600, letterSpacing: "-0.02em" }}>{greeting}, {userName}.</h1>
         <p style={{ margin: "8px 0 0", fontSize: 14.5, color: "var(--mut)" }}>
           Sua rede tem <span style={{ color: "var(--accent)", fontWeight: 600 }}>{insights.length} insights</span> conectando {themeCount} temas em {books.length} livros.
         </p>
 
         {lastBook && (
-          <div style={{ marginTop: 32, display: "flex", alignItems: "center", gap: 20, padding: "18px 20px", background: "#fff", border: "1px solid var(--line)", borderRadius: 12 }}>
+          <div className="wf-detail-header" style={{ marginTop: 32, padding: "18px 20px", background: "#fff", border: "1px solid var(--line)", borderRadius: 12 }}>
             <BookCover title={lastBook.title} coverUrl={lastBook.cover_url} width={52} height={76} fontSize={20} />
             <div style={{ flex: 1, minWidth: 0 }}>
               <div style={{ fontSize: 10.5, fontWeight: 700, letterSpacing: "0.09em", color: "var(--faint)" }}>CONTINUE LENDO</div>
@@ -53,7 +53,7 @@ export default function Library({ insights, books, themeCount, userName, onOpen,
               </div>
             </div>
             {!DEMO_MODE && (
-              <>
+              <div className="wf-actions">
                 <button onClick={() => onEditBook(lastBook.id)} style={{ flexShrink: 0, padding: "8px 14px", border: "1px solid var(--line)", borderRadius: 8, background: "#fff", color: "var(--ink)", fontSize: 13, fontWeight: 600 }}>
                   Editar
                 </button>
@@ -63,7 +63,7 @@ export default function Library({ insights, books, themeCount, userName, onOpen,
                 <button onClick={onNewInsight} style={{ flexShrink: 0, padding: "8px 14px", border: "1px solid var(--accent-line)", borderRadius: 8, background: "var(--accent-soft)", color: "var(--accent)", fontSize: 13, fontWeight: 600 }}>
                   Registrar insight
                 </button>
-              </>
+              </div>
             )}
           </div>
         )}

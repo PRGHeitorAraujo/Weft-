@@ -20,7 +20,7 @@ export default function DemoProfilePicker() {
 
   return (
     <div style={{ position: "fixed", inset: 0, zIndex: 50, background: "var(--bg)", display: "flex", alignItems: "center", justifyContent: "center", overflowY: "auto" }}>
-      <div className="fade-up" style={{ width: 520, padding: "40px 0" }}>
+      <div className="fade-up" style={{ width: "100%", maxWidth: 520, padding: "40px 20px" }}>
         <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
           <span style={{ fontFamily: "var(--prose)", fontSize: 30, fontWeight: 600, letterSpacing: "-0.02em" }}>Weft</span>
         </div>

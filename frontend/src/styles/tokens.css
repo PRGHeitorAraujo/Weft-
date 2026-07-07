@@ -38,3 +38,111 @@ button { cursor: pointer; }
 
 .fade-up { animation: fadeUp .35s ease; }
 .fade-in { animation: fadeIn .25s ease; }
+
+html, body { overflow-x: hidden; }
+
+/* Mobile layout (~360-640px). One breakpoint, applied everywhere. */
+
+/* iOS Safari zooms the page on focus if a form field's font-size is under 16px. */
+@media (max-width: 640px) {
+  input, textarea, select { font-size: 16px !important; }
+}
+
+@media (max-width: 640px) {
+  .wf-app-shell { flex-direction: column-reverse !important; }
+}
+
+/* AuthScreen's floating author/theme labels are decorative (aria-hidden) and
+   collide with the card's text at phone widths — drop them there. */
+@media (max-width: 640px) {
+  .wf-auth-decor { display: none; }
+}
+
+.wf-page { padding: 52px 40px 64px; }
+.wf-page-tight { padding: 44px 44px 96px; }
+@media (max-width: 640px) {
+  .wf-page { padding: 28px 16px 48px; }
+  .wf-page-tight { padding: 24px 16px 64px; }
+}
+
+.wf-detail-header { display: flex; align-items: center; gap: 20px; }
+.wf-actions { display: flex; gap: 10px; flex-shrink: 0; }
+@media (max-width: 640px) {
+  .wf-detail-header { flex-wrap: wrap; }
+  .wf-actions { width: 100%; flex-wrap: wrap; }
+  .wf-actions > button { flex: 1 1 auto; }
+}
+
+.wf-insights-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+@media (max-width: 640px) {
+  .wf-insights-grid { grid-template-columns: 1fr; }
+}
+
+/* Sidebar: left rail on desktop, bottom tab bar on mobile. */
+.wf-sidebar-profile-label-mobile { display: none; }
+@media (max-width: 640px) {
+  .wf-sidebar {
+    width: 100% !important;
+    flex-direction: row !important;
+    padding: 4px 4px calc(4px + env(safe-area-inset-bottom)) !important;
+    border-right: none !important;
+    border-top: 1px solid var(--line);
+  }
+  .wf-sidebar-logo, .wf-sidebar-new, .wf-sidebar-profile-detail, .wf-sidebar-logout { display: none !important; }
+  .wf-sidebar-nav { flex-direction: row !important; flex: 1; gap: 0 !important; }
+  .wf-sidebar-navitem, .wf-sidebar-profile {
+    flex: 1;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 3px !important;
+    padding: 6px 2px !important;
+    font-size: 10.5px !important;
+    min-height: 48px;
+  }
+  .wf-sidebar-navitem svg { width: 18px; height: 18px; }
+  .wf-sidebar-profile { margin-top: 0 !important; border-top: none !important; }
+  .wf-sidebar-profile-label-mobile { display: block; font-weight: 600; }
+}
+
+/* Graph: canvas fills the width, node detail becomes a bottom sheet. */
+.wf-graph-backdrop { display: none; }
+@media (max-width: 640px) {
+  .wf-graph-header { padding: 18px 16px 0 !important; }
+  .wf-graph-filters { padding: 12px 16px 0 !important; }
+  .wf-graph-zoom-controls { right: 10px !important; top: 10px !important; gap: 8px !important; }
+  .wf-graph-zoom-controls button { width: 44px !important; height: 44px !important; font-size: 19px !important; }
+  .wf-graph-legend { left: 12px !important; bottom: 12px !important; padding: 10px 12px !important; gap: 5px !important; }
+
+  .wf-graph-backdrop { display: block; position: fixed; inset: 0; background: rgba(20, 20, 26, 0.35); z-index: 40; }
+  .wf-graph-aside {
+    position: fixed !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    top: auto !important;
+    width: auto !important;
+    max-height: 75vh !important;
+    border-left: none !important;
+    border-top: 1px solid var(--line) !important;
+    border-radius: 16px 16px 0 0 !important;
+    box-shadow: 0 -8px 30px rgba(20, 20, 26, 0.18) !important;
+    z-index: 41 !important;
+    padding: 18px 20px calc(18px + env(safe-area-inset-bottom)) !important;
+  }
+  .wf-graph-aside::before {
+    content: "";
+    display: block;
+    width: 36px;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--line);
+    margin: 0 auto 14px;
+  }
+}
+
+/* Editor: suggestions rail moves below the form on mobile. */
+@media (max-width: 640px) {
+  .wf-editor-main { flex-direction: column !important; overflow: auto !important; }
+  .wf-editor-aside { width: 100% !important; border-left: none !important; border-top: 1px solid var(--line) !important; }
+}

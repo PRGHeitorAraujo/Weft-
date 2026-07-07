@@ -315,12 +315,12 @@ export default function Graph({ insights, books, themes, edges, onOpenEditor, in
   return (
     <main style={{ flex: 1, display: "flex", overflow: "hidden" }}>
       <div style={{ flex: 1, display: "flex", flexDirection: "column", minWidth: 0 }}>
-        <div style={{ padding: "26px 32px 0", display: "flex", alignItems: "baseline", gap: 14 }}>
+        <div className="wf-graph-header" style={{ padding: "26px 32px 0", display: "flex", alignItems: "baseline", gap: 14, flexWrap: "wrap" }}>
           <h1 style={{ margin: 0, fontSize: 19, fontWeight: 600, letterSpacing: "-0.015em" }}>Grafo de Ideias</h1>
-          <span style={{ fontSize: 13, color: "var(--mut)" }}>Arraste para navegar, role para zoom, clique em um nó para ver conexões.</span>
+          <span style={{ fontSize: 13, color: "var(--mut)" }}>Arraste para navegar (ou belisque para zoom), toque em um nó para ver conexões.</span>
         </div>
 
-        <div style={{ padding: "14px 32px 0", display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
+        <div className="wf-graph-filters" style={{ padding: "14px 32px 0", display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
           <button
             onClick={() => setFilterMode("all")}
             style={{
@@ -381,7 +381,7 @@ export default function Graph({ insights, books, themes, edges, onOpenEditor, in
             viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
             preserveAspectRatio="xMidYMid meet"
             className="fade-in"
-            style={{ width: "100%", height: "100%", display: "block", cursor: panning ? "grabbing" : "grab" }}
+            style={{ width: "100%", height: "100%", display: "block", cursor: panning ? "grabbing" : "grab", touchAction: "none" }}
           >
             <rect x={0} y={0} width={WIDTH} height={HEIGHT} fill="transparent" />
             <g ref={zoomGroupRef}>
@@ -472,13 +472,13 @@ export default function Graph({ insights, books, themes, edges, onOpenEditor, in
             </g>
           </svg>
 
-          <div style={{ position: "absolute", right: 24, top: 20, display: "flex", flexDirection: "column", gap: 6 }}>
+          <div className="wf-graph-zoom-controls" style={{ position: "absolute", right: 24, top: 20, display: "flex", flexDirection: "column", gap: 6 }}>
             <button onClick={() => zoomBy(1.3)} title="Aumentar zoom" style={{ width: 32, height: 32, border: "1px solid var(--line)", borderRadius: 8, background: "#fff", fontSize: 16, fontWeight: 600, color: "var(--ink)", boxShadow: "0 1px 2px rgba(28,28,36,0.08)" }}>+</button>
             <button onClick={() => zoomBy(1 / 1.3)} title="Diminuir zoom" style={{ width: 32, height: 32, border: "1px solid var(--line)", borderRadius: 8, background: "#fff", fontSize: 16, fontWeight: 600, color: "var(--ink)", boxShadow: "0 1px 2px rgba(28,28,36,0.08)" }}>−</button>
             <button onClick={fitToView} title="Ajustar à tela" style={{ width: 32, height: 32, border: "1px solid var(--line)", borderRadius: 8, background: "#fff", fontSize: 13, color: "var(--ink)", boxShadow: "0 1px 2px rgba(28,28,36,0.08)" }}>⤢</button>
           </div>
 
-          <div style={{ position: "absolute", left: 24, bottom: 20, padding: "13px 15px", background: "rgba(255,255,255,0.92)", border: "1px solid var(--line)", borderRadius: 10, backdropFilter: "blur(4px)", display: "flex", flexDirection: "column", gap: 7 }}>
+          <div className="wf-graph-legend" style={{ position: "absolute", left: 24, bottom: 20, padding: "13px 15px", background: "rgba(255,255,255,0.92)", border: "1px solid var(--line)", borderRadius: 10, backdropFilter: "blur(4px)", display: "flex", flexDirection: "column", gap: 7 }}>
             <div style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 11.5, color: "var(--mut)" }}><span style={{ width: 14, height: 14, borderRadius: "50%", background: "var(--accent-soft)", border: "1.5px solid var(--accent)", flexShrink: 0 }} />Tema</div>
             <div style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 11.5, color: "var(--mut)" }}><span style={{ width: 9, height: 9, borderRadius: "50%", background: "#fff", border: "2px solid #0F766E", margin: "0 2.5px", flexShrink: 0 }} />Insight <span style={{ color: "var(--faint)" }}>(cor = tipo)</span></div>
             <div style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 11.5, color: "var(--mut)" }}><span style={{ width: 11, height: 11, borderRadius: 3, background: "#26232E", margin: "0 1.5px", flexShrink: 0 }} />Livro</div>
@@ -493,7 +493,9 @@ export default function Graph({ insights, books, themes, edges, onOpenEditor, in
       </div>
 
       {selNode && (
-        <aside className="fade-in" style={{ width: 316, flexShrink: 0, borderLeft: "1px solid var(--line)", background: "#fff", overflowY: "auto", padding: "28px 24px 40px" }}>
+        <>
+          <div className="wf-graph-backdrop" onClick={() => setSelected(null)} />
+          <aside className="wf-graph-aside fade-in" style={{ width: 316, flexShrink: 0, borderLeft: "1px solid var(--line)", background: "#fff", overflowY: "auto", padding: "28px 24px 40px" }}>
           <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
             <span style={{ fontSize: 10.5, fontWeight: 700, letterSpacing: "0.09em", color: selNode.kind === "insight" && selNode.insight ? TYPES[selNode.insight.kind].color : "var(--accent)" }}>
               {selNode.kind === "theme" ? "TEMA CANÔNICO" : selNode.kind === "book" ? "LIVRO" : selNode.insight ? TYPES[selNode.insight.kind].label : ""}
@@ -573,7 +575,8 @@ export default function Graph({ insights, books, themes, edges, onOpenEditor, in
               </>
             );
           })()}
-        </aside>
+          </aside>
+        </>
       )}
     </main>
   );

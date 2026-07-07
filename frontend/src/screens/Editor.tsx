@@ -152,10 +152,10 @@ export default function Editor({ insightId, books, themes, edges, insights, onNa
   }, [edges, insight, insights]);
 
   return (
-    <main style={{ flex: 1, display: "flex", overflow: "hidden" }}>
+    <main className="wf-editor-main" style={{ flex: 1, display: "flex", overflow: "hidden" }}>
       <div style={{ flex: 1, overflowY: "auto" }}>
-        <div className="fade-up" style={{ maxWidth: 680, margin: "0 auto", padding: "44px 44px 96px" }}>
-          <div style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 13, color: "var(--mut)" }}>
+        <div className="fade-up wf-page-tight" style={{ maxWidth: 680, margin: "0 auto" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 13, color: "var(--mut)", flexWrap: "wrap" }}>
             <span onClick={onNavigateInsights} style={{ cursor: "pointer" }}>Insights</span>
             <span style={{ color: "var(--faint)" }}>/</span>
             <span style={{ display: "inline-flex", alignItems: "center", gap: 6, padding: "3px 10px", border: "1px solid var(--line)", borderRadius: 20, background: "#fff", fontSize: 12.5 }}>
@@ -257,7 +257,7 @@ export default function Editor({ insightId, books, themes, edges, insights, onNa
         </div>
       </div>
 
-      <aside style={{ width: 324, flexShrink: 0, borderLeft: "1px solid var(--line)", background: "#fff", overflowY: "auto", padding: "36px 24px 48px" }}>
+      <aside className="wf-editor-aside" style={{ width: 324, flexShrink: 0, borderLeft: "1px solid var(--line)", background: "#fff", overflowY: "auto", padding: "36px 24px 48px" }}>
         {DEMO_MODE ? (
           <>
             <div style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.07em", color: "var(--faint)" }}>CONECTADO A</div>

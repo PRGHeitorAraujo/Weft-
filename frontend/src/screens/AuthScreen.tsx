@@ -81,7 +81,7 @@ export default function AuthScreen({ demoMode = false, onEnterDemo }: Props) {
 
   return (
     <div style={{ position: "fixed", inset: 0, zIndex: 50, background: "var(--bg)", display: "flex", alignItems: "center", justifyContent: "center", overflowY: "auto" }}>
-      <div aria-hidden="true" style={{ position: "absolute", inset: 0, overflow: "hidden", pointerEvents: "none" }}>
+      <div aria-hidden="true" className="wf-auth-decor" style={{ position: "absolute", inset: 0, overflow: "hidden", pointerEvents: "none" }}>
         <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", opacity: 0.5 }}>
           <path d="M170 210 L305 345 M305 345 L200 520 M305 345 L150 690 M1255 200 L1150 380 M1150 380 L1280 555 M1150 380 L1230 720 M1280 555 L1230 720" stroke="#DDDCE8" strokeWidth={1.2} strokeDasharray="3 6" fill="none" />
         </svg>
@@ -196,7 +196,7 @@ export default function AuthScreen({ demoMode = false, onEnterDemo }: Props) {
         </div>
       </div>
 
-      <div className="fade-up" style={{ position: "relative", width: 360, padding: "40px 0" }}>
+      <div className="fade-up" style={{ position: "relative", width: "100%", maxWidth: 360, padding: "40px 20px" }}>
         <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
           <span style={{ fontFamily: "var(--prose)", fontSize: 30, fontWeight: 600, letterSpacing: "-0.02em" }}>Weft</span>
         </div>

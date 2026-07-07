@@ -94,7 +94,7 @@ export default function ReadingSession({ book, onExit }: Props) {
 
   return (
     <main style={{ flex: 1, overflowY: "auto" }}>
-      <div className="fade-up" style={{ maxWidth: 640, margin: "0 auto", padding: "52px 40px 64px" }}>
+      <div className="fade-up wf-page" style={{ maxWidth: 640, margin: "0 auto" }}>
         <span onClick={onExit} style={{ fontSize: 13, fontWeight: 500, color: "var(--accent)", cursor: "pointer" }}>← Biblioteca</span>
 
         <div style={{ marginTop: 20, display: "flex", alignItems: "center", gap: 16 }}>
