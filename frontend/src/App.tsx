@@ -1,9 +1,11 @@
 import { useState } from "react";
+import { DEMO_MODE } from "./api";
 import { AuthProvider, useAuth } from "./auth/AuthContext";
 import Sidebar from "./components/Sidebar";
 import { useBooks, useEdges, useInsights, useThemes, useUpdateReadingStatus } from "./queries";
 import AuthScreen from "./screens/AuthScreen";
 import BookDetail from "./screens/BookDetail";
+import DemoProfilePicker from "./screens/DemoProfilePicker";
 import Editor from "./screens/Editor";
 import Graph from "./screens/Graph";
 import Insights from "./screens/Insights";
@@ -142,6 +144,7 @@ function AppShell() {
           books={books}
           themes={themes}
           edges={edges}
+          insights={insights}
           onNavigateInsights={() => navigate("insights")}
           onCreated={(id) => setEditingId(id)}
           onOpenInsight={openInsight}
@@ -166,7 +169,7 @@ function Gate() {
   if (loading) {
     return <div style={{ display: "flex", height: "100vh", alignItems: "center", justifyContent: "center", color: "var(--mut)" }}>Carregando…</div>;
   }
-  if (!user) return <AuthScreen />;
+  if (!user) return DEMO_MODE ? <DemoProfilePicker /> : <AuthScreen />;
   return <AppShell />;
 }
 

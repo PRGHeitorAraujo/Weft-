@@ -216,6 +216,35 @@ mão (ver nota abaixo sobre `init.sql`).
 `VITE_API_URL` nas variáveis de ambiente da Vercel com a URL pública do
 backend no Railway.
 
+### Modo demo estático (só Vercel, sem backend)
+
+Para publicar apenas uma vitrine navegável dos 3 perfis de exemplo — sem
+Railway, sem Postgres, sem cadastro — configure na Vercel:
+
+```
+VITE_DEMO_MODE=true
+```
+
+e não defina `VITE_API_URL` (é ignorado nesse modo). O build resultante de
+`npm run build` é 100% estático: os dados dos 3 perfis vêm de
+`frontend/src/demo-data/*.json` (exportados do banco local com
+`backend/app/export_demo_data.py`), o app abre direto num seletor de perfil
+em vez de tela de login, e toda ação de escrita (criar/editar/excluir
+insight, criar aresta, timer de leitura, editar livro) fica oculta —
+inclusive a busca por similaridade semântica, que depende do backend.
+Grafo, filtros por tema/livro e leitura de insights funcionam inteiramente
+a partir do JSON estático, sem nenhuma chamada de rede.
+
+Para reexportar os perfis depois de editar os dados de exemplo no banco
+local:
+
+```bash
+docker cp backend/app/export_demo_data.py marginalia-backend-1:/app/app/export_demo_data.py
+docker exec marginalia-backend-1 python -m app.export_demo_data helena@example.com > frontend/src/demo-data/helena.json
+docker exec marginalia-backend-1 python -m app.export_demo_data alan@example.com > frontend/src/demo-data/alan.json
+docker exec marginalia-backend-1 python -m app.export_demo_data marina@example.com > frontend/src/demo-data/marina.json
+```
+
 ---
 
 ## Decisões que ficaram para depois (fase 2)

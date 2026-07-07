@@ -1,0 +1,1212 @@
+{
+  "user": {
+    "id": "8c7c7da0-59ea-484b-b893-eeaf587f60f5",
+    "email": "alan@example.com",
+    "display_name": "Alan"
+  },
+  "books": [
+    {
+      "id": "a8ef8ece-5c7f-40f9-86bc-de1ddb50e7c5",
+      "title": "12 Regras para a Vida",
+      "author": "Jordan B. Peterson",
+      "cover_url": null,
+      "reading_status": "lido",
+      "created_at": "2026-07-05T00:48:31.192006+00:00",
+      "chapters": []
+    },
+    {
+      "id": "2bdd00fb-bbc9-4393-bd1a-db9771d06eae",
+      "title": "48 Leis do Poder",
+      "author": "Robert Greene",
+      "cover_url": "https://m.media-amazon.com/images/I/71dLhjUgN5L._SY425_.jpg",
+      "reading_status": "lendo",
+      "created_at": "2026-07-05T00:48:31.192006+00:00",
+      "chapters": []
+    },
+    {
+      "id": "58f0ada6-ef80-4d2c-a68d-28c5d8467c78",
+      "title": "Onze Anéis",
+      "author": "Phil Jackson",
+      "cover_url": "https://m.media-amazon.com/images/I/51TdpwqDTML._SY445_SX342_ML2_.jpg",
+      "reading_status": "lido",
+      "created_at": "2026-07-05T00:48:31.192006+00:00",
+      "chapters": []
+    }
+  ],
+  "themes": [
+    {
+      "id": "17a40d3d-a498-46c6-bd66-db5016da1b86",
+      "slug": "culpa",
+      "label": "Culpa"
+    },
+    {
+      "id": "eae3d3fc-03a4-43a1-9866-2c5a6a3e5928",
+      "slug": "consciencia",
+      "label": "Consciência"
+    },
+    {
+      "id": "78ae8273-3413-4bde-93fc-24bf1f6013fd",
+      "slug": "moral",
+      "label": "Moral"
+    },
+    {
+      "id": "d0744404-2110-488a-8ad2-5cfb074c861a",
+      "slug": "punicao",
+      "label": "Punição"
+    },
+    {
+      "id": "175dbfb8-35e2-403c-b63c-d41f7c129c1d",
+      "slug": "isolamento",
+      "label": "Isolamento"
+    },
+    {
+      "id": "aedd75c6-593e-47fd-b31a-d9a8e4206af9",
+      "slug": "identidade",
+      "label": "Identidade"
+    },
+    {
+      "id": "3bf12ef0-934d-49bd-975a-16336f2d096a",
+      "slug": "poder",
+      "label": "Poder"
+    },
+    {
+      "id": "0e291322-2d47-485e-bef4-c46543d059e6",
+      "slug": "sofrimento",
+      "label": "Sofrimento"
+    },
+    {
+      "id": "2ddbf111-d3e0-4db2-8f4e-408b9429ff6f",
+      "slug": "compaixao",
+      "label": "Compaixão"
+    },
+    {
+      "id": "2a262e8b-ce32-4702-8252-89ecadd6d9ea",
+      "slug": "razao",
+      "label": "Razão"
+    },
+    {
+      "id": "82d7190e-818e-427b-ad09-c22e996a3733",
+      "slug": "medo",
+      "label": "Medo"
+    },
+    {
+      "id": "abfbc107-783c-472a-82e4-499aa36e9a18",
+      "slug": "ego",
+      "label": "Ego"
+    },
+    {
+      "id": "0fa8086f-220f-4074-a418-110e623d8d85",
+      "slug": "disciplina",
+      "label": "Disciplina"
+    },
+    {
+      "id": "71c544be-86cb-4b38-a754-0cae1abda757",
+      "slug": "lideranca",
+      "label": "Liderança"
+    },
+    {
+      "id": "7098acea-a6a9-4fba-951a-a861278a3ae2",
+      "slug": "proposito",
+      "label": "Propósito"
+    },
+    {
+      "id": "3ec9df17-f6ac-458b-813d-f1ffeb03be5e",
+      "slug": "autocontrole",
+      "label": "Autocontrole"
+    },
+    {
+      "id": "2245f69c-e13f-45b5-848e-d79688d92909",
+      "slug": "competencia",
+      "label": "Competência"
+    },
+    {
+      "id": "10530066-72f0-48df-9ff7-0a6d930515c5",
+      "slug": "responsabilidade",
+      "label": "Responsabilidade"
+    },
+    {
+      "id": "a0f9dbbf-a109-43ff-8705-77331c7498d3",
+      "slug": "ambiente",
+      "label": "Ambiente"
+    },
+    {
+      "id": "6f6ef4dc-744b-4b32-b021-59ccf3a7e070",
+      "slug": "instinto",
+      "label": "Instinto"
+    },
+    {
+      "id": "c6f18589-65c2-40d9-ac39-b63d391ddf29",
+      "slug": "acao",
+      "label": "Ação"
+    },
+    {
+      "id": "62c5dc8f-0b98-4d8e-8f2e-42bc3abeba2c",
+      "slug": "esperanca",
+      "label": "Esperança"
+    },
+    {
+      "id": "3a0521ac-344e-488a-a9d5-9780e88517a8",
+      "slug": "confianca",
+      "label": "Confiança"
+    },
+    {
+      "id": "acb7749b-1dc3-480d-9076-7c30d06bf646",
+      "slug": "liberdade",
+      "label": "Liberdade"
+    },
+    {
+      "id": "38202cbd-e3ab-4aa6-9fe4-d7a7a77c60ef",
+      "slug": "amor",
+      "label": "Amor"
+    }
+  ],
+  "insights": [
+    {
+      "id": "bc63c6bc-9219-4bbf-89e8-4cf1b5497b18",
+      "book_id": "2bdd00fb-bbc9-4393-bd1a-db9771d06eae",
+      "chapter_id": null,
+      "title": null,
+      "body": "O medo torna a pessoa previsível — quem teme hesita, entrega informação e vira alvo de manipulação.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-05T00:48:31.192006+00:00",
+      "themes": [
+        {
+          "id": "3bf12ef0-934d-49bd-975a-16336f2d096a",
+          "slug": "poder",
+          "label": "Poder"
+        },
+        {
+          "id": "82d7190e-818e-427b-ad09-c22e996a3733",
+          "slug": "medo",
+          "label": "Medo"
+        },
+        {
+          "id": "3ec9df17-f6ac-458b-813d-f1ffeb03be5e",
+          "slug": "autocontrole",
+          "label": "Autocontrole"
+        }
+      ]
+    },
+    {
+      "id": "741ea7f6-9728-440f-98c8-46ae27e2abe9",
+      "book_id": "2bdd00fb-bbc9-4393-bd1a-db9771d06eae",
+      "chapter_id": null,
+      "title": null,
+      "body": "Você nunca controla o outro por completo, só as próprias emoções, tempo e linguagem — o poder começa no autodomínio.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-05T00:48:31.192006+00:00",
+      "themes": [
+        {
+          "id": "3bf12ef0-934d-49bd-975a-16336f2d096a",
+          "slug": "poder",
+          "label": "Poder"
+        },
+        {
+          "id": "3ec9df17-f6ac-458b-813d-f1ffeb03be5e",
+          "slug": "autocontrole",
+          "label": "Autocontrole"
+        }
+      ]
+    },
+    {
+      "id": "713b3cd9-6ca3-44aa-b41c-172d021e0add",
+      "book_id": "2bdd00fb-bbc9-4393-bd1a-db9771d06eae",
+      "chapter_id": null,
+      "title": null,
+      "body": "O ego cega o estrategista: faz subestimar o adversário e perder sinais — suprimir o ego é condição pra enxergar claro.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-05T00:48:31.192006+00:00",
+      "themes": [
+        {
+          "id": "3bf12ef0-934d-49bd-975a-16336f2d096a",
+          "slug": "poder",
+          "label": "Poder"
+        },
+        {
+          "id": "2a262e8b-ce32-4702-8252-89ecadd6d9ea",
+          "slug": "razao",
+          "label": "Razão"
+        },
+        {
+          "id": "abfbc107-783c-472a-82e4-499aa36e9a18",
+          "slug": "ego",
+          "label": "Ego"
+        }
+      ]
+    },
+    {
+      "id": "f9ea7df1-401e-46a8-8d7b-c2fd60cd45fc",
+      "book_id": "2bdd00fb-bbc9-4393-bd1a-db9771d06eae",
+      "chapter_id": null,
+      "title": null,
+      "body": "Preparação elimina o improviso perigoso — a disciplina prévia é o que dá margem de manobra depois.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-05T00:48:31.192006+00:00",
+      "themes": [
+        {
+          "id": "3bf12ef0-934d-49bd-975a-16336f2d096a",
+          "slug": "poder",
+          "label": "Poder"
+        },
+        {
+          "id": "0fa8086f-220f-4074-a418-110e623d8d85",
+          "slug": "disciplina",
+          "label": "Disciplina"
+        }
+      ]
+    },
+    {
+      "id": "c7671eaa-7ea0-44cb-ae0b-4ce15d57201e",
+      "book_id": "2bdd00fb-bbc9-4393-bd1a-db9771d06eae",
+      "chapter_id": null,
+      "title": null,
+      "body": "Influência é mais poderosa que autoridade — o poder que não precisa se impor é o mais durável.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-05T00:48:31.192006+00:00",
+      "themes": [
+        {
+          "id": "3bf12ef0-934d-49bd-975a-16336f2d096a",
+          "slug": "poder",
+          "label": "Poder"
+        },
+        {
+          "id": "71c544be-86cb-4b38-a754-0cae1abda757",
+          "slug": "lideranca",
+          "label": "Liderança"
+        }
+      ]
+    },
+    {
+      "id": "0371db8b-bb70-42ca-b037-f17d28784a89",
+      "book_id": "2bdd00fb-bbc9-4393-bd1a-db9771d06eae",
+      "chapter_id": null,
+      "title": null,
+      "body": "A informação vale mais que a ação rápida — quem observa acumula vantagem sobre quem reage.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-05T00:48:31.192006+00:00",
+      "themes": [
+        {
+          "id": "3bf12ef0-934d-49bd-975a-16336f2d096a",
+          "slug": "poder",
+          "label": "Poder"
+        },
+        {
+          "id": "2a262e8b-ce32-4702-8252-89ecadd6d9ea",
+          "slug": "razao",
+          "label": "Razão"
+        }
+      ]
+    },
+    {
+      "id": "e92002cd-fff6-42b1-afbc-651295ed9455",
+      "book_id": "2bdd00fb-bbc9-4393-bd1a-db9771d06eae",
+      "chapter_id": null,
+      "title": null,
+      "body": "O poder é consequência da estratégia — persegui-lo diretamente o afasta; construir competência o atrai.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-05T00:48:31.192006+00:00",
+      "themes": [
+        {
+          "id": "3bf12ef0-934d-49bd-975a-16336f2d096a",
+          "slug": "poder",
+          "label": "Poder"
+        },
+        {
+          "id": "2245f69c-e13f-45b5-848e-d79688d92909",
+          "slug": "competencia",
+          "label": "Competência"
+        }
+      ]
+    },
+    {
+      "id": "0aeb3686-065c-41c8-95f9-54d66ea5b6c3",
+      "book_id": "2bdd00fb-bbc9-4393-bd1a-db9771d06eae",
+      "chapter_id": null,
+      "title": null,
+      "body": "Quem reage emocionalmente revela fraquezas — a emoção exposta é informação entregue ao adversário.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-05T00:48:31.192006+00:00",
+      "themes": [
+        {
+          "id": "3bf12ef0-934d-49bd-975a-16336f2d096a",
+          "slug": "poder",
+          "label": "Poder"
+        },
+        {
+          "id": "3ec9df17-f6ac-458b-813d-f1ffeb03be5e",
+          "slug": "autocontrole",
+          "label": "Autocontrole"
+        }
+      ]
+    },
+    {
+      "id": "43d80410-1b42-46af-a5d7-95dbd16e794d",
+      "book_id": "2bdd00fb-bbc9-4393-bd1a-db9771d06eae",
+      "chapter_id": null,
+      "title": null,
+      "body": "Ambientes são reflexo das pessoas influentes — quem tem poder molda o entorno.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-05T00:48:31.192006+00:00",
+      "themes": [
+        {
+          "id": "3bf12ef0-934d-49bd-975a-16336f2d096a",
+          "slug": "poder",
+          "label": "Poder"
+        },
+        {
+          "id": "71c544be-86cb-4b38-a754-0cae1abda757",
+          "slug": "lideranca",
+          "label": "Liderança"
+        }
+      ]
+    },
+    {
+      "id": "1b741e3c-99ad-494e-90ab-e41daf123300",
+      "book_id": "2bdd00fb-bbc9-4393-bd1a-db9771d06eae",
+      "chapter_id": null,
+      "title": null,
+      "body": "O melhor estrategista não precisa mostrar força — o poder que se exibe é mais fraco que o que se esconde.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-05T00:48:31.192006+00:00",
+      "themes": [
+        {
+          "id": "3bf12ef0-934d-49bd-975a-16336f2d096a",
+          "slug": "poder",
+          "label": "Poder"
+        },
+        {
+          "id": "3ec9df17-f6ac-458b-813d-f1ffeb03be5e",
+          "slug": "autocontrole",
+          "label": "Autocontrole"
+        }
+      ]
+    },
+    {
+      "id": "0c310391-0689-4fbd-801c-f2d6a0d46e61",
+      "book_id": "2bdd00fb-bbc9-4393-bd1a-db9771d06eae",
+      "chapter_id": null,
+      "title": null,
+      "body": "Quem tem objetivo claro é difícil de manipular — o propósito é uma armadura contra o jogo dos outros.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-05T00:48:31.192006+00:00",
+      "themes": [
+        {
+          "id": "3bf12ef0-934d-49bd-975a-16336f2d096a",
+          "slug": "poder",
+          "label": "Poder"
+        },
+        {
+          "id": "7098acea-a6a9-4fba-951a-a861278a3ae2",
+          "slug": "proposito",
+          "label": "Propósito"
+        }
+      ]
+    },
+    {
+      "id": "66442958-4984-4815-9082-d2359be0e784",
+      "book_id": "2bdd00fb-bbc9-4393-bd1a-db9771d06eae",
+      "chapter_id": null,
+      "title": null,
+      "body": "Preparação e aprendizado contínuo — o poder duradouro se acumula devagar.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-05T00:48:31.192006+00:00",
+      "themes": [
+        {
+          "id": "3bf12ef0-934d-49bd-975a-16336f2d096a",
+          "slug": "poder",
+          "label": "Poder"
+        },
+        {
+          "id": "0fa8086f-220f-4074-a418-110e623d8d85",
+          "slug": "disciplina",
+          "label": "Disciplina"
+        }
+      ]
+    },
+    {
+      "id": "2e957cc8-0015-45e8-bfbf-af1ddcd764df",
+      "book_id": "a8ef8ece-5c7f-40f9-86bc-de1ddb50e7c5",
+      "chapter_id": null,
+      "title": null,
+      "body": "Comparar-se com quem você era ontem, e não com o outro, dissolve o medo do julgamento social.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-05T00:48:31.192006+00:00",
+      "themes": [
+        {
+          "id": "aedd75c6-593e-47fd-b31a-d9a8e4206af9",
+          "slug": "identidade",
+          "label": "Identidade"
+        },
+        {
+          "id": "82d7190e-818e-427b-ad09-c22e996a3733",
+          "slug": "medo",
+          "label": "Medo"
+        },
+        {
+          "id": "10530066-72f0-48df-9ff7-0a6d930515c5",
+          "slug": "responsabilidade",
+          "label": "Responsabilidade"
+        }
+      ]
+    },
+    {
+      "id": "923373cf-6fae-49fc-acd3-bb389ffddb7f",
+      "book_id": "a8ef8ece-5c7f-40f9-86bc-de1ddb50e7c5",
+      "chapter_id": null,
+      "title": null,
+      "body": "'Arrume seu quarto' não é sobre o quarto — é ordem interna como pré-condição de qualquer ordem externa.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-05T00:48:31.192006+00:00",
+      "themes": [
+        {
+          "id": "0fa8086f-220f-4074-a418-110e623d8d85",
+          "slug": "disciplina",
+          "label": "Disciplina"
+        },
+        {
+          "id": "3ec9df17-f6ac-458b-813d-f1ffeb03be5e",
+          "slug": "autocontrole",
+          "label": "Autocontrole"
+        },
+        {
+          "id": "10530066-72f0-48df-9ff7-0a6d930515c5",
+          "slug": "responsabilidade",
+          "label": "Responsabilidade"
+        }
+      ]
+    },
+    {
+      "id": "97485618-29be-4e94-befa-712851312eb9",
+      "book_id": "a8ef8ece-5c7f-40f9-86bc-de1ddb50e7c5",
+      "chapter_id": null,
+      "title": null,
+      "body": "O orgulho excessivo trava o aprendizado — admitir que pode estar errado é pré-condição pra crescer.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-05T00:48:31.192006+00:00",
+      "themes": [
+        {
+          "id": "aedd75c6-593e-47fd-b31a-d9a8e4206af9",
+          "slug": "identidade",
+          "label": "Identidade"
+        },
+        {
+          "id": "2a262e8b-ce32-4702-8252-89ecadd6d9ea",
+          "slug": "razao",
+          "label": "Razão"
+        },
+        {
+          "id": "abfbc107-783c-472a-82e4-499aa36e9a18",
+          "slug": "ego",
+          "label": "Ego"
+        }
+      ]
+    },
+    {
+      "id": "3d9c5b0e-5614-4b5d-894d-183f60e33354",
+      "book_id": "a8ef8ece-5c7f-40f9-86bc-de1ddb50e7c5",
+      "chapter_id": null,
+      "title": null,
+      "body": "Rotina reduz sofrimento — a estrutura diária é o que diminui o caos, não o que o aprisiona.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-05T00:48:31.192006+00:00",
+      "themes": [
+        {
+          "id": "0e291322-2d47-485e-bef4-c46543d059e6",
+          "slug": "sofrimento",
+          "label": "Sofrimento"
+        },
+        {
+          "id": "0fa8086f-220f-4074-a418-110e623d8d85",
+          "slug": "disciplina",
+          "label": "Disciplina"
+        }
+      ]
+    },
+    {
+      "id": "19c68274-5ffe-4044-a8b8-7c2c3ba63299",
+      "book_id": "a8ef8ece-5c7f-40f9-86bc-de1ddb50e7c5",
+      "chapter_id": null,
+      "title": null,
+      "body": "Liderar pelo exemplo — a autoridade moral vem do que você faz, não do que impõe.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-05T00:48:31.192006+00:00",
+      "themes": [
+        {
+          "id": "71c544be-86cb-4b38-a754-0cae1abda757",
+          "slug": "lideranca",
+          "label": "Liderança"
+        },
+        {
+          "id": "10530066-72f0-48df-9ff7-0a6d930515c5",
+          "slug": "responsabilidade",
+          "label": "Responsabilidade"
+        }
+      ]
+    },
+    {
+      "id": "9fec28dd-bf42-4b66-8f0e-96aaa0deb41c",
+      "book_id": "a8ef8ece-5c7f-40f9-86bc-de1ddb50e7c5",
+      "chapter_id": null,
+      "title": null,
+      "body": "Ouça, pense, depois fale — a impulsividade verbal é uma forma de desordem.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-05T00:48:31.192006+00:00",
+      "themes": [
+        {
+          "id": "2a262e8b-ce32-4702-8252-89ecadd6d9ea",
+          "slug": "razao",
+          "label": "Razão"
+        },
+        {
+          "id": "3ec9df17-f6ac-458b-813d-f1ffeb03be5e",
+          "slug": "autocontrole",
+          "label": "Autocontrole"
+        }
+      ]
+    },
+    {
+      "id": "6049cb1d-27ab-4324-81a5-4506b1bf6b40",
+      "book_id": "a8ef8ece-5c7f-40f9-86bc-de1ddb50e7c5",
+      "chapter_id": null,
+      "title": null,
+      "body": "Focar no processo, não no resultado — o resultado é subproduto do processo bem feito.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-05T00:48:31.192006+00:00",
+      "themes": [
+        {
+          "id": "7098acea-a6a9-4fba-951a-a861278a3ae2",
+          "slug": "proposito",
+          "label": "Propósito"
+        },
+        {
+          "id": "2245f69c-e13f-45b5-848e-d79688d92909",
+          "slug": "competencia",
+          "label": "Competência"
+        }
+      ]
+    },
+    {
+      "id": "8d961995-1b0d-405c-8e30-9876abe4691a",
+      "book_id": "a8ef8ece-5c7f-40f9-86bc-de1ddb50e7c5",
+      "chapter_id": null,
+      "title": null,
+      "body": "Você sente medo, mas não precisa obedecê-lo — a emoção informa, não comanda.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-05T00:48:31.192006+00:00",
+      "themes": [
+        {
+          "id": "82d7190e-818e-427b-ad09-c22e996a3733",
+          "slug": "medo",
+          "label": "Medo"
+        },
+        {
+          "id": "3ec9df17-f6ac-458b-813d-f1ffeb03be5e",
+          "slug": "autocontrole",
+          "label": "Autocontrole"
+        }
+      ]
+    },
+    {
+      "id": "b85be473-4760-4712-acc3-b6d36694b292",
+      "book_id": "a8ef8ece-5c7f-40f9-86bc-de1ddb50e7c5",
+      "chapter_id": null,
+      "title": null,
+      "body": "A responsabilidade individual é a base — o ambiente melhora quando o indivíduo assume o próprio peso.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-05T00:48:31.192006+00:00",
+      "themes": [
+        {
+          "id": "71c544be-86cb-4b38-a754-0cae1abda757",
+          "slug": "lideranca",
+          "label": "Liderança"
+        },
+        {
+          "id": "10530066-72f0-48df-9ff7-0a6d930515c5",
+          "slug": "responsabilidade",
+          "label": "Responsabilidade"
+        }
+      ]
+    },
+    {
+      "id": "7cf11149-c275-415b-bc67-e3a1bd9489bf",
+      "book_id": "a8ef8ece-5c7f-40f9-86bc-de1ddb50e7c5",
+      "chapter_id": null,
+      "title": null,
+      "body": "Competência verdadeira não precisa de demonstração constante — a arrogância é sinal de insegurança, não de força.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-05T00:48:31.192006+00:00",
+      "themes": [
+        {
+          "id": "abfbc107-783c-472a-82e4-499aa36e9a18",
+          "slug": "ego",
+          "label": "Ego"
+        },
+        {
+          "id": "2245f69c-e13f-45b5-848e-d79688d92909",
+          "slug": "competencia",
+          "label": "Competência"
+        }
+      ]
+    },
+    {
+      "id": "0e14b2e4-de87-4843-a4b7-e6bab522a960",
+      "book_id": "a8ef8ece-5c7f-40f9-86bc-de1ddb50e7c5",
+      "chapter_id": null,
+      "title": null,
+      "body": "Encontrar significado é o que sustenta diante do sofrimento — sem propósito, qualquer crítica destrói.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-05T00:48:31.192006+00:00",
+      "themes": [
+        {
+          "id": "0e291322-2d47-485e-bef4-c46543d059e6",
+          "slug": "sofrimento",
+          "label": "Sofrimento"
+        },
+        {
+          "id": "82d7190e-818e-427b-ad09-c22e996a3733",
+          "slug": "medo",
+          "label": "Medo"
+        },
+        {
+          "id": "7098acea-a6a9-4fba-951a-a861278a3ae2",
+          "slug": "proposito",
+          "label": "Propósito"
+        }
+      ]
+    },
+    {
+      "id": "a16cfd3c-f7df-46bf-9ae9-217764d9b073",
+      "book_id": "a8ef8ece-5c7f-40f9-86bc-de1ddb50e7c5",
+      "chapter_id": null,
+      "title": null,
+      "body": "Melhoria diária e paciência — nenhuma excelência é súbita.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-05T00:48:31.192006+00:00",
+      "themes": [
+        {
+          "id": "0fa8086f-220f-4074-a418-110e623d8d85",
+          "slug": "disciplina",
+          "label": "Disciplina"
+        },
+        {
+          "id": "2245f69c-e13f-45b5-848e-d79688d92909",
+          "slug": "competencia",
+          "label": "Competência"
+        }
+      ]
+    },
+    {
+      "id": "43936492-0133-4220-bff8-ecefbf3318d8",
+      "book_id": "58f0ada6-ef80-4d2c-a68d-28c5d8467c78",
+      "chapter_id": null,
+      "title": null,
+      "body": "O jogador dominado pelo medo força arremessos e perde a leitura do jogo — clareza vence ansiedade.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-05T00:48:31.192006+00:00",
+      "themes": [
+        {
+          "id": "2a262e8b-ce32-4702-8252-89ecadd6d9ea",
+          "slug": "razao",
+          "label": "Razão"
+        },
+        {
+          "id": "82d7190e-818e-427b-ad09-c22e996a3733",
+          "slug": "medo",
+          "label": "Medo"
+        },
+        {
+          "id": "3ec9df17-f6ac-458b-813d-f1ffeb03be5e",
+          "slug": "autocontrole",
+          "label": "Autocontrole"
+        }
+      ]
+    },
+    {
+      "id": "cfabbc3d-2bbf-4f4c-8cb7-e9ab767792dd",
+      "book_id": "58f0ada6-ef80-4d2c-a68d-28c5d8467c78",
+      "chapter_id": null,
+      "title": null,
+      "body": "Jackson ensinava respiração e meditação antes de jogadas — observar os próprios pensamentos precede controlar a quadra.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-05T00:48:31.192006+00:00",
+      "themes": [
+        {
+          "id": "0fa8086f-220f-4074-a418-110e623d8d85",
+          "slug": "disciplina",
+          "label": "Disciplina"
+        },
+        {
+          "id": "3ec9df17-f6ac-458b-813d-f1ffeb03be5e",
+          "slug": "autocontrole",
+          "label": "Autocontrole"
+        }
+      ]
+    },
+    {
+      "id": "aab29c54-16b9-4c07-8edd-f2460bc308fe",
+      "book_id": "58f0ada6-ef80-4d2c-a68d-28c5d8467c78",
+      "chapter_id": null,
+      "title": null,
+      "body": "Jordan e Kobe só viraram campeões quando o ego passou a servir o grupo — o ego do craque é obstáculo, não ativo.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-05T00:48:31.192006+00:00",
+      "themes": [
+        {
+          "id": "aedd75c6-593e-47fd-b31a-d9a8e4206af9",
+          "slug": "identidade",
+          "label": "Identidade"
+        },
+        {
+          "id": "abfbc107-783c-472a-82e4-499aa36e9a18",
+          "slug": "ego",
+          "label": "Ego"
+        },
+        {
+          "id": "71c544be-86cb-4b38-a754-0cae1abda757",
+          "slug": "lideranca",
+          "label": "Liderança"
+        }
+      ]
+    },
+    {
+      "id": "dddac9dd-4030-41cc-88c9-a66e95e69e49",
+      "book_id": "58f0ada6-ef80-4d2c-a68d-28c5d8467c78",
+      "chapter_id": null,
+      "title": null,
+      "body": "Repetir o básico milhares de vezes é o que cria liberdade dentro do jogo — a automação libera a criação.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-05T00:48:31.192006+00:00",
+      "themes": [
+        {
+          "id": "0fa8086f-220f-4074-a418-110e623d8d85",
+          "slug": "disciplina",
+          "label": "Disciplina"
+        },
+        {
+          "id": "2245f69c-e13f-45b5-848e-d79688d92909",
+          "slug": "competencia",
+          "label": "Competência"
+        }
+      ]
+    },
+    {
+      "id": "c89a36f0-fafa-496b-b569-463132763b43",
+      "book_id": "58f0ada6-ef80-4d2c-a68d-28c5d8467c78",
+      "chapter_id": null,
+      "title": null,
+      "body": "Jackson nunca gritava pra controlar — criava um ambiente onde o jogador queria entregar o melhor; a melhor liderança produz autonomia.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-05T00:48:31.192006+00:00",
+      "themes": [
+        {
+          "id": "71c544be-86cb-4b38-a754-0cae1abda757",
+          "slug": "lideranca",
+          "label": "Liderança"
+        },
+        {
+          "id": "3ec9df17-f6ac-458b-813d-f1ffeb03be5e",
+          "slug": "autocontrole",
+          "label": "Autocontrole"
+        }
+      ]
+    },
+    {
+      "id": "b741942d-c6a3-4c76-8031-887cbc819d5d",
+      "book_id": "58f0ada6-ef80-4d2c-a68d-28c5d8467c78",
+      "chapter_id": null,
+      "title": null,
+      "body": "Ler o jogo antes de decidir — a leitura precede a jogada, sempre.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-05T00:48:31.192006+00:00",
+      "themes": [
+        {
+          "id": "2a262e8b-ce32-4702-8252-89ecadd6d9ea",
+          "slug": "razao",
+          "label": "Razão"
+        },
+        {
+          "id": "2245f69c-e13f-45b5-848e-d79688d92909",
+          "slug": "competencia",
+          "label": "Competência"
+        }
+      ]
+    },
+    {
+      "id": "a3f79192-e3a7-40fe-b753-4e354c94bf34",
+      "book_id": "58f0ada6-ef80-4d2c-a68d-28c5d8467c78",
+      "chapter_id": null,
+      "title": null,
+      "body": "Campeonatos são consequência da cultura, não o alvo direto — construir a cultura produz a vitória.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-05T00:48:31.192006+00:00",
+      "themes": [
+        {
+          "id": "71c544be-86cb-4b38-a754-0cae1abda757",
+          "slug": "lideranca",
+          "label": "Liderança"
+        },
+        {
+          "id": "2245f69c-e13f-45b5-848e-d79688d92909",
+          "slug": "competencia",
+          "label": "Competência"
+        }
+      ]
+    },
+    {
+      "id": "bead244c-3cdb-4b50-b448-7a9c3a2dce79",
+      "book_id": "58f0ada6-ef80-4d2c-a68d-28c5d8467c78",
+      "chapter_id": null,
+      "title": null,
+      "body": "A emoção precisa existir, mas não dirigir a decisão — senti-la sem ser governado por ela.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-05T00:48:31.192006+00:00",
+      "themes": [
+        {
+          "id": "2a262e8b-ce32-4702-8252-89ecadd6d9ea",
+          "slug": "razao",
+          "label": "Razão"
+        },
+        {
+          "id": "3ec9df17-f6ac-458b-813d-f1ffeb03be5e",
+          "slug": "autocontrole",
+          "label": "Autocontrole"
+        }
+      ]
+    },
+    {
+      "id": "38465e03-9470-4b1a-8992-1f118ceb44bb",
+      "book_id": "58f0ada6-ef80-4d2c-a68d-28c5d8467c78",
+      "chapter_id": null,
+      "title": null,
+      "body": "A cultura do time nasce dos indivíduos — você muda o grupo mudando as pessoas.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-05T00:48:31.192006+00:00",
+      "themes": [
+        {
+          "id": "aedd75c6-593e-47fd-b31a-d9a8e4206af9",
+          "slug": "identidade",
+          "label": "Identidade"
+        },
+        {
+          "id": "71c544be-86cb-4b38-a754-0cae1abda757",
+          "slug": "lideranca",
+          "label": "Liderança"
+        }
+      ]
+    },
+    {
+      "id": "7bd45407-1d29-4872-9efb-59f0c07a16e3",
+      "book_id": "58f0ada6-ef80-4d2c-a68d-28c5d8467c78",
+      "chapter_id": null,
+      "title": null,
+      "body": "Jackson era calmo, nunca precisava provar autoridade — a confiança silenciosa dispensa demonstração.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-05T00:48:31.192006+00:00",
+      "themes": [
+        {
+          "id": "71c544be-86cb-4b38-a754-0cae1abda757",
+          "slug": "lideranca",
+          "label": "Liderança"
+        },
+        {
+          "id": "3ec9df17-f6ac-458b-813d-f1ffeb03be5e",
+          "slug": "autocontrole",
+          "label": "Autocontrole"
+        }
+      ]
+    },
+    {
+      "id": "66d62367-9442-48d6-8ec3-42ae2306035d",
+      "book_id": "58f0ada6-ef80-4d2c-a68d-28c5d8467c78",
+      "chapter_id": null,
+      "title": null,
+      "body": "Jogar por algo maior que si mesmo — o propósito coletivo dissolve o medo individual.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-05T00:48:31.192006+00:00",
+      "themes": [
+        {
+          "id": "82d7190e-818e-427b-ad09-c22e996a3733",
+          "slug": "medo",
+          "label": "Medo"
+        },
+        {
+          "id": "71c544be-86cb-4b38-a754-0cae1abda757",
+          "slug": "lideranca",
+          "label": "Liderança"
+        },
+        {
+          "id": "7098acea-a6a9-4fba-951a-a861278a3ae2",
+          "slug": "proposito",
+          "label": "Propósito"
+        }
+      ]
+    },
+    {
+      "id": "4a62a324-97da-41c2-a621-4352f6ef4756",
+      "book_id": "58f0ada6-ef80-4d2c-a68d-28c5d8467c78",
+      "chapter_id": null,
+      "title": null,
+      "body": "Repetição e paciência — o campeonato é o topo de anos de base.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-05T00:48:31.192006+00:00",
+      "themes": [
+        {
+          "id": "0fa8086f-220f-4074-a418-110e623d8d85",
+          "slug": "disciplina",
+          "label": "Disciplina"
+        },
+        {
+          "id": "2245f69c-e13f-45b5-848e-d79688d92909",
+          "slug": "competencia",
+          "label": "Competência"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "dec810d1-779b-4fb8-91f5-a0e040637688",
+      "source_id": "bc63c6bc-9219-4bbf-89e8-4cf1b5497b18",
+      "target_id": "8d961995-1b0d-405c-8e30-9876abe4691a",
+      "kind": "mesma_ideia",
+      "description": null,
+      "created_at": "2026-07-05T00:48:31.192006+00:00"
+    },
+    {
+      "id": "26679e0e-5cc9-456b-a46e-e80bee9d6a6f",
+      "source_id": "bc63c6bc-9219-4bbf-89e8-4cf1b5497b18",
+      "target_id": "43936492-0133-4220-bff8-ecefbf3318d8",
+      "kind": "mesma_ideia",
+      "description": null,
+      "created_at": "2026-07-05T00:48:31.192006+00:00"
+    },
+    {
+      "id": "12cdc9b4-3a4d-4675-9ca1-75f87a1e0a42",
+      "source_id": "8d961995-1b0d-405c-8e30-9876abe4691a",
+      "target_id": "43936492-0133-4220-bff8-ecefbf3318d8",
+      "kind": "mesma_ideia",
+      "description": null,
+      "created_at": "2026-07-05T00:48:31.192006+00:00"
+    },
+    {
+      "id": "457169b9-c1a5-4873-8d14-97ac43f3a01c",
+      "source_id": "713b3cd9-6ca3-44aa-b41c-172d021e0add",
+      "target_id": "97485618-29be-4e94-befa-712851312eb9",
+      "kind": "mesma_ideia",
+      "description": null,
+      "created_at": "2026-07-05T00:48:31.192006+00:00"
+    },
+    {
+      "id": "4a515c8a-286c-4e0d-939c-f0cb835fa4a2",
+      "source_id": "97485618-29be-4e94-befa-712851312eb9",
+      "target_id": "aab29c54-16b9-4c07-8edd-f2460bc308fe",
+      "kind": "mesma_ideia",
+      "description": null,
+      "created_at": "2026-07-05T00:48:31.192006+00:00"
+    },
+    {
+      "id": "7d73fe45-8f96-43f8-ab10-c4d65c0bfc9a",
+      "source_id": "66442958-4984-4815-9082-d2359be0e784",
+      "target_id": "a16cfd3c-f7df-46bf-9ae9-217764d9b073",
+      "kind": "mesma_ideia",
+      "description": null,
+      "created_at": "2026-07-05T00:48:31.192006+00:00"
+    },
+    {
+      "id": "a3209f41-4b9f-42d6-9967-63194fec388d",
+      "source_id": "66442958-4984-4815-9082-d2359be0e784",
+      "target_id": "4a62a324-97da-41c2-a621-4352f6ef4756",
+      "kind": "mesma_ideia",
+      "description": null,
+      "created_at": "2026-07-05T00:48:31.192006+00:00"
+    },
+    {
+      "id": "cfaa22b5-afca-4e38-816c-893686b5d80e",
+      "source_id": "a16cfd3c-f7df-46bf-9ae9-217764d9b073",
+      "target_id": "4a62a324-97da-41c2-a621-4352f6ef4756",
+      "kind": "mesma_ideia",
+      "description": null,
+      "created_at": "2026-07-05T00:48:31.192006+00:00"
+    },
+    {
+      "id": "e3268b1e-d513-4cb4-a1a7-16405184f846",
+      "source_id": "c7671eaa-7ea0-44cb-ae0b-4ce15d57201e",
+      "target_id": "19c68274-5ffe-4044-a8b8-7c2c3ba63299",
+      "kind": "mesma_ideia",
+      "description": null,
+      "created_at": "2026-07-05T00:48:31.192006+00:00"
+    },
+    {
+      "id": "d73ec202-2255-4afe-b49d-1dc219e8efd5",
+      "source_id": "c7671eaa-7ea0-44cb-ae0b-4ce15d57201e",
+      "target_id": "7bd45407-1d29-4872-9efb-59f0c07a16e3",
+      "kind": "mesma_ideia",
+      "description": null,
+      "created_at": "2026-07-05T00:48:31.192006+00:00"
+    },
+    {
+      "id": "066c7ebf-f01d-4f87-b8af-741aa5e25263",
+      "source_id": "19c68274-5ffe-4044-a8b8-7c2c3ba63299",
+      "target_id": "7bd45407-1d29-4872-9efb-59f0c07a16e3",
+      "kind": "mesma_ideia",
+      "description": null,
+      "created_at": "2026-07-05T00:48:31.192006+00:00"
+    },
+    {
+      "id": "ce9833cd-379c-468b-9fd1-32be2b681572",
+      "source_id": "0c310391-0689-4fbd-801c-f2d6a0d46e61",
+      "target_id": "0e14b2e4-de87-4843-a4b7-e6bab522a960",
+      "kind": "mesma_ideia",
+      "description": null,
+      "created_at": "2026-07-05T00:48:31.192006+00:00"
+    },
+    {
+      "id": "5b645f0a-00db-4bb3-a4bc-436eefbb7254",
+      "source_id": "0e14b2e4-de87-4843-a4b7-e6bab522a960",
+      "target_id": "66d62367-9442-48d6-8ec3-42ae2306035d",
+      "kind": "mesma_ideia",
+      "description": null,
+      "created_at": "2026-07-05T00:48:31.192006+00:00"
+    },
+    {
+      "id": "ab4875ba-607c-43a0-8134-8a1da3e3c65b",
+      "source_id": "0aeb3686-065c-41c8-95f9-54d66ea5b6c3",
+      "target_id": "8d961995-1b0d-405c-8e30-9876abe4691a",
+      "kind": "mesma_ideia",
+      "description": null,
+      "created_at": "2026-07-05T00:48:31.192006+00:00"
+    },
+    {
+      "id": "a0431af3-e249-4e19-955e-33585dd806f9",
+      "source_id": "0aeb3686-065c-41c8-95f9-54d66ea5b6c3",
+      "target_id": "bead244c-3cdb-4b50-b448-7a9c3a2dce79",
+      "kind": "mesma_ideia",
+      "description": null,
+      "created_at": "2026-07-05T00:48:31.192006+00:00"
+    },
+    {
+      "id": "60dd0720-fb0c-4969-8f4f-afbe1c8d8f1c",
+      "source_id": "8d961995-1b0d-405c-8e30-9876abe4691a",
+      "target_id": "bead244c-3cdb-4b50-b448-7a9c3a2dce79",
+      "kind": "mesma_ideia",
+      "description": null,
+      "created_at": "2026-07-05T00:48:31.192006+00:00"
+    },
+    {
+      "id": "8164e1b3-3b55-4a7c-b491-4b35a42d4df3",
+      "source_id": "e92002cd-fff6-42b1-afbc-651295ed9455",
+      "target_id": "6049cb1d-27ab-4324-81a5-4506b1bf6b40",
+      "kind": "mesma_ideia",
+      "description": null,
+      "created_at": "2026-07-05T00:48:31.192006+00:00"
+    },
+    {
+      "id": "deaf2e6a-b5b6-4ad8-a582-36ab4968998c",
+      "source_id": "e92002cd-fff6-42b1-afbc-651295ed9455",
+      "target_id": "a3f79192-e3a7-40fe-b753-4e354c94bf34",
+      "kind": "mesma_ideia",
+      "description": null,
+      "created_at": "2026-07-05T00:48:31.192006+00:00"
+    },
+    {
+      "id": "6b4f1ae2-c068-4615-b042-616d8b92f404",
+      "source_id": "6049cb1d-27ab-4324-81a5-4506b1bf6b40",
+      "target_id": "a3f79192-e3a7-40fe-b753-4e354c94bf34",
+      "kind": "mesma_ideia",
+      "description": null,
+      "created_at": "2026-07-05T00:48:31.192006+00:00"
+    },
+    {
+      "id": "713d53fb-2e25-4b96-ab3d-8198b997778b",
+      "source_id": "aab29c54-16b9-4c07-8edd-f2460bc308fe",
+      "target_id": "713b3cd9-6ca3-44aa-b41c-172d021e0add",
+      "kind": "conflita_com",
+      "description": "Jackson quer dissolver o ego no coletivo, abrindo mão do poder individual; Greene quer suprimir o ego para preservar e acumular o poder individual. Mesma ferramenta, fins opostos.",
+      "created_at": "2026-07-05T00:48:31.192006+00:00"
+    },
+    {
+      "id": "f1f86d7a-6ee1-46af-bd21-62c18f151384",
+      "source_id": "c89a36f0-fafa-496b-b569-463132763b43",
+      "target_id": "43d80410-1b42-46af-a5d7-95dbd16e794d",
+      "kind": "conflita_com",
+      "description": "Liderança que se apaga para criar autonomia vs. poder que molda o ambiente à própria imagem.",
+      "created_at": "2026-07-05T00:48:31.192006+00:00"
+    },
+    {
+      "id": "9849b2dc-ff2a-4c46-a1d5-e2c9b0c3dd59",
+      "source_id": "66d62367-9442-48d6-8ec3-42ae2306035d",
+      "target_id": "0c310391-0689-4fbd-801c-f2d6a0d46e61",
+      "kind": "conflita_com",
+      "description": "Propósito como entrega ao coletivo vs. propósito como blindagem individual.",
+      "created_at": "2026-07-05T00:48:31.192006+00:00"
+    },
+    {
+      "id": "1aaa28db-140e-4297-bbc3-4ea00195cd22",
+      "source_id": "923373cf-6fae-49fc-acd3-bb389ffddb7f",
+      "target_id": "741ea7f6-9728-440f-98c8-46ae27e2abe9",
+      "kind": "e_precondicao_de",
+      "description": null,
+      "created_at": "2026-07-05T00:48:31.192006+00:00"
+    },
+    {
+      "id": "4330610a-5da4-43ec-8e63-b3ee2fe5584d",
+      "source_id": "923373cf-6fae-49fc-acd3-bb389ffddb7f",
+      "target_id": "cfabbc3d-2bbf-4f4c-8cb7-e9ab767792dd",
+      "kind": "e_precondicao_de",
+      "description": null,
+      "created_at": "2026-07-05T00:48:31.192006+00:00"
+    },
+    {
+      "id": "7ba898f2-9aa2-4c1f-8933-3d8ad1989c8d",
+      "source_id": "3d9c5b0e-5614-4b5d-894d-183f60e33354",
+      "target_id": "dddac9dd-4030-41cc-88c9-a66e95e69e49",
+      "kind": "e_precondicao_de",
+      "description": null,
+      "created_at": "2026-07-05T00:48:31.192006+00:00"
+    },
+    {
+      "id": "9dddeb89-b296-4748-8e5e-21fb465525f7",
+      "source_id": "97485618-29be-4e94-befa-712851312eb9",
+      "target_id": "7cf11149-c275-415b-bc67-e3a1bd9489bf",
+      "kind": "e_precondicao_de",
+      "description": null,
+      "created_at": "2026-07-05T00:48:31.192006+00:00"
+    }
+  ]
+}

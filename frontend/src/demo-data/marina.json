@@ -1,0 +1,659 @@
+{
+  "user": {
+    "id": "cf38894d-033f-4e42-89ce-218edb997c59",
+    "email": "marina@example.com",
+    "display_name": "Marina"
+  },
+  "books": [
+    {
+      "id": "87a6b512-9b6b-4f79-9124-2d5aa60b2cea",
+      "title": "Caninos Brancos",
+      "author": "Jack London",
+      "cover_url": null,
+      "reading_status": "lido",
+      "created_at": "2026-07-06T20:14:38.632475+00:00",
+      "chapters": []
+    },
+    {
+      "id": "ebf92872-6117-4d25-a9d5-9e0b597707a1",
+      "title": "Noites Brancas",
+      "author": "Fiódor Dostoiévski",
+      "cover_url": null,
+      "reading_status": "lendo",
+      "created_at": "2026-07-06T20:14:38.632475+00:00",
+      "chapters": []
+    },
+    {
+      "id": "03cb8961-52ed-4b87-9091-d843437600b8",
+      "title": "Hamlet",
+      "author": "William Shakespeare",
+      "cover_url": null,
+      "reading_status": "lido",
+      "created_at": "2026-07-06T20:14:38.632475+00:00",
+      "chapters": []
+    }
+  ],
+  "themes": [
+    {
+      "id": "17a40d3d-a498-46c6-bd66-db5016da1b86",
+      "slug": "culpa",
+      "label": "Culpa"
+    },
+    {
+      "id": "eae3d3fc-03a4-43a1-9866-2c5a6a3e5928",
+      "slug": "consciencia",
+      "label": "Consciência"
+    },
+    {
+      "id": "78ae8273-3413-4bde-93fc-24bf1f6013fd",
+      "slug": "moral",
+      "label": "Moral"
+    },
+    {
+      "id": "d0744404-2110-488a-8ad2-5cfb074c861a",
+      "slug": "punicao",
+      "label": "Punição"
+    },
+    {
+      "id": "175dbfb8-35e2-403c-b63c-d41f7c129c1d",
+      "slug": "isolamento",
+      "label": "Isolamento"
+    },
+    {
+      "id": "aedd75c6-593e-47fd-b31a-d9a8e4206af9",
+      "slug": "identidade",
+      "label": "Identidade"
+    },
+    {
+      "id": "3bf12ef0-934d-49bd-975a-16336f2d096a",
+      "slug": "poder",
+      "label": "Poder"
+    },
+    {
+      "id": "0e291322-2d47-485e-bef4-c46543d059e6",
+      "slug": "sofrimento",
+      "label": "Sofrimento"
+    },
+    {
+      "id": "2ddbf111-d3e0-4db2-8f4e-408b9429ff6f",
+      "slug": "compaixao",
+      "label": "Compaixão"
+    },
+    {
+      "id": "2a262e8b-ce32-4702-8252-89ecadd6d9ea",
+      "slug": "razao",
+      "label": "Razão"
+    },
+    {
+      "id": "82d7190e-818e-427b-ad09-c22e996a3733",
+      "slug": "medo",
+      "label": "Medo"
+    },
+    {
+      "id": "abfbc107-783c-472a-82e4-499aa36e9a18",
+      "slug": "ego",
+      "label": "Ego"
+    },
+    {
+      "id": "0fa8086f-220f-4074-a418-110e623d8d85",
+      "slug": "disciplina",
+      "label": "Disciplina"
+    },
+    {
+      "id": "71c544be-86cb-4b38-a754-0cae1abda757",
+      "slug": "lideranca",
+      "label": "Liderança"
+    },
+    {
+      "id": "7098acea-a6a9-4fba-951a-a861278a3ae2",
+      "slug": "proposito",
+      "label": "Propósito"
+    },
+    {
+      "id": "3ec9df17-f6ac-458b-813d-f1ffeb03be5e",
+      "slug": "autocontrole",
+      "label": "Autocontrole"
+    },
+    {
+      "id": "2245f69c-e13f-45b5-848e-d79688d92909",
+      "slug": "competencia",
+      "label": "Competência"
+    },
+    {
+      "id": "10530066-72f0-48df-9ff7-0a6d930515c5",
+      "slug": "responsabilidade",
+      "label": "Responsabilidade"
+    },
+    {
+      "id": "a0f9dbbf-a109-43ff-8705-77331c7498d3",
+      "slug": "ambiente",
+      "label": "Ambiente"
+    },
+    {
+      "id": "6f6ef4dc-744b-4b32-b021-59ccf3a7e070",
+      "slug": "instinto",
+      "label": "Instinto"
+    },
+    {
+      "id": "c6f18589-65c2-40d9-ac39-b63d391ddf29",
+      "slug": "acao",
+      "label": "Ação"
+    },
+    {
+      "id": "62c5dc8f-0b98-4d8e-8f2e-42bc3abeba2c",
+      "slug": "esperanca",
+      "label": "Esperança"
+    },
+    {
+      "id": "3a0521ac-344e-488a-a9d5-9780e88517a8",
+      "slug": "confianca",
+      "label": "Confiança"
+    },
+    {
+      "id": "acb7749b-1dc3-480d-9076-7c30d06bf646",
+      "slug": "liberdade",
+      "label": "Liberdade"
+    },
+    {
+      "id": "38202cbd-e3ab-4aa6-9fe4-d7a7a77c60ef",
+      "slug": "amor",
+      "label": "Amor"
+    }
+  ],
+  "insights": [
+    {
+      "id": "cf851a6e-44f5-425e-9f71-3a730435bf2e",
+      "book_id": "87a6b512-9b6b-4f79-9124-2d5aa60b2cea",
+      "chapter_id": null,
+      "title": null,
+      "body": "O ser nasce de um jeito, mas o ambiente o refaz — violência, confiança e amor em Caninos Brancos são todos aprendidos, não inatos.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-06T20:14:38.632475+00:00",
+      "themes": [
+        {
+          "id": "a0f9dbbf-a109-43ff-8705-77331c7498d3",
+          "slug": "ambiente",
+          "label": "Ambiente"
+        },
+        {
+          "id": "aedd75c6-593e-47fd-b31a-d9a8e4206af9",
+          "slug": "identidade",
+          "label": "Identidade"
+        }
+      ]
+    },
+    {
+      "id": "7fa79f11-5f02-460e-93d5-1513bf0991a4",
+      "book_id": "87a6b512-9b6b-4f79-9124-2d5aa60b2cea",
+      "chapter_id": null,
+      "title": null,
+      "body": "Para o lobo, a solidão é sobrevivência, mas também medo constante — o isolamento protege e ameaça ao mesmo tempo.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-06T20:14:38.632475+00:00",
+      "themes": [
+        {
+          "id": "175dbfb8-35e2-403c-b63c-d41f7c129c1d",
+          "slug": "isolamento",
+          "label": "Isolamento"
+        },
+        {
+          "id": "82d7190e-818e-427b-ad09-c22e996a3733",
+          "slug": "medo",
+          "label": "Medo"
+        }
+      ]
+    },
+    {
+      "id": "781c63b9-4964-4f68-b6e6-80b1b6811ccf",
+      "book_id": "87a6b512-9b6b-4f79-9124-2d5aa60b2cea",
+      "chapter_id": null,
+      "title": null,
+      "body": "O amor entra como confiança: pela primeira vez ele percebe que a força não é a única linguagem possível.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-06T20:14:38.632475+00:00",
+      "themes": [
+        {
+          "id": "38202cbd-e3ab-4aa6-9fe4-d7a7a77c60ef",
+          "slug": "amor",
+          "label": "Amor"
+        },
+        {
+          "id": "3a0521ac-344e-488a-a9d5-9780e88517a8",
+          "slug": "confianca",
+          "label": "Confiança"
+        }
+      ]
+    },
+    {
+      "id": "6f2aad2d-71e9-4974-b3e4-04177b2882d0",
+      "book_id": "87a6b512-9b6b-4f79-9124-2d5aa60b2cea",
+      "chapter_id": null,
+      "title": null,
+      "body": "Ele aprende violência porque vive violência — a ferida ensina a ferir.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-06T20:14:38.632475+00:00",
+      "themes": [
+        {
+          "id": "a0f9dbbf-a109-43ff-8705-77331c7498d3",
+          "slug": "ambiente",
+          "label": "Ambiente"
+        },
+        {
+          "id": "6f6ef4dc-744b-4b32-b021-59ccf3a7e070",
+          "slug": "instinto",
+          "label": "Instinto"
+        }
+      ]
+    },
+    {
+      "id": "f8d0dbd5-4547-4f35-aafd-987f3ab78780",
+      "book_id": "87a6b512-9b6b-4f79-9124-2d5aa60b2cea",
+      "chapter_id": null,
+      "title": null,
+      "body": "Caninos Brancos age por instinto, rápido e sem hesitar — a sobrevivência é da ação, não da dúvida.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-06T20:14:38.632475+00:00",
+      "themes": [
+        {
+          "id": "6f6ef4dc-744b-4b32-b021-59ccf3a7e070",
+          "slug": "instinto",
+          "label": "Instinto"
+        },
+        {
+          "id": "c6f18589-65c2-40d9-ac39-b63d391ddf29",
+          "slug": "acao",
+          "label": "Ação"
+        }
+      ]
+    },
+    {
+      "id": "b09ddeb4-56c4-4cfa-91d8-6996709ab4b0",
+      "book_id": "87a6b512-9b6b-4f79-9124-2d5aa60b2cea",
+      "chapter_id": null,
+      "title": null,
+      "body": "Liberdade sem segurança pode ser sofrimento — ser livre não é o mesmo que viver bem.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-06T20:14:38.632475+00:00",
+      "themes": [
+        {
+          "id": "acb7749b-1dc3-480d-9076-7c30d06bf646",
+          "slug": "liberdade",
+          "label": "Liberdade"
+        },
+        {
+          "id": "0e291322-2d47-485e-bef4-c46543d059e6",
+          "slug": "sofrimento",
+          "label": "Sofrimento"
+        }
+      ]
+    },
+    {
+      "id": "63e7445a-183e-4464-bf4b-ee87972e1aa6",
+      "book_id": "ebf92872-6117-4d25-a9d5-9e0b597707a1",
+      "chapter_id": null,
+      "title": null,
+      "body": "O Sonhador vive mais dentro da própria cabeça que no mundo — a cidade e a solidão moldam tanto quanto a natureza molda o lobo.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-06T20:14:38.632475+00:00",
+      "themes": [
+        {
+          "id": "175dbfb8-35e2-403c-b63c-d41f7c129c1d",
+          "slug": "isolamento",
+          "label": "Isolamento"
+        },
+        {
+          "id": "a0f9dbbf-a109-43ff-8705-77331c7498d3",
+          "slug": "ambiente",
+          "label": "Ambiente"
+        }
+      ]
+    },
+    {
+      "id": "c0438265-7971-4cca-bb2a-d5b7275b7382",
+      "book_id": "ebf92872-6117-4d25-a9d5-9e0b597707a1",
+      "chapter_id": null,
+      "title": null,
+      "body": "A imaginação cria mundos melhores que a realidade, e é justamente isso que impede o Sonhador de viver a real.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-06T20:14:38.632475+00:00",
+      "themes": [
+        {
+          "id": "175dbfb8-35e2-403c-b63c-d41f7c129c1d",
+          "slug": "isolamento",
+          "label": "Isolamento"
+        },
+        {
+          "id": "2a262e8b-ce32-4702-8252-89ecadd6d9ea",
+          "slug": "razao",
+          "label": "Razão"
+        }
+      ]
+    },
+    {
+      "id": "3e9c35de-b543-4dfb-ae3e-7adbd1069e35",
+      "book_id": "ebf92872-6117-4d25-a9d5-9e0b597707a1",
+      "chapter_id": null,
+      "title": null,
+      "body": "O amor entra como esperança — curto, condenado a terminar, e ainda assim transforma por inteiro.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-06T20:14:38.632475+00:00",
+      "themes": [
+        {
+          "id": "38202cbd-e3ab-4aa6-9fe4-d7a7a77c60ef",
+          "slug": "amor",
+          "label": "Amor"
+        },
+        {
+          "id": "62c5dc8f-0b98-4d8e-8f2e-42bc3abeba2c",
+          "slug": "esperanca",
+          "label": "Esperança"
+        }
+      ]
+    },
+    {
+      "id": "e759a214-5003-49b2-b530-a084d4bcd59d",
+      "book_id": "ebf92872-6117-4d25-a9d5-9e0b597707a1",
+      "chapter_id": null,
+      "title": null,
+      "body": "Ele entrega confiança rápido demais e sofre por isso — confiar sem discernimento é uma ferida à espera.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-06T20:14:38.632475+00:00",
+      "themes": [
+        {
+          "id": "3a0521ac-344e-488a-a9d5-9780e88517a8",
+          "slug": "confianca",
+          "label": "Confiança"
+        },
+        {
+          "id": "0e291322-2d47-485e-bef4-c46543d059e6",
+          "slug": "sofrimento",
+          "label": "Sofrimento"
+        }
+      ]
+    },
+    {
+      "id": "a9d9c7db-c9b6-420a-a3c8-125c0d0d9682",
+      "book_id": "ebf92872-6117-4d25-a9d5-9e0b597707a1",
+      "chapter_id": null,
+      "title": null,
+      "body": "O Sonhador termina só, mas agradece pelos poucos dias felizes — nem toda felicidade precisa durar pra ter valor.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-06T20:14:38.632475+00:00",
+      "themes": [
+        {
+          "id": "62c5dc8f-0b98-4d8e-8f2e-42bc3abeba2c",
+          "slug": "esperanca",
+          "label": "Esperança"
+        },
+        {
+          "id": "38202cbd-e3ab-4aa6-9fe4-d7a7a77c60ef",
+          "slug": "amor",
+          "label": "Amor"
+        }
+      ]
+    },
+    {
+      "id": "1bbdf350-763a-4f65-b1a3-26d4ef1abec9",
+      "book_id": "ebf92872-6117-4d25-a9d5-9e0b597707a1",
+      "chapter_id": null,
+      "title": null,
+      "body": "Ele é livre, mas não consegue viver — a liberdade sem coragem de agir vira paralisia.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-06T20:14:38.632475+00:00",
+      "themes": [
+        {
+          "id": "acb7749b-1dc3-480d-9076-7c30d06bf646",
+          "slug": "liberdade",
+          "label": "Liberdade"
+        },
+        {
+          "id": "c6f18589-65c2-40d9-ac39-b63d391ddf29",
+          "slug": "acao",
+          "label": "Ação"
+        }
+      ]
+    },
+    {
+      "id": "ca772c96-4ae3-4e3f-b7ab-d3372775e86c",
+      "book_id": "03cb8961-52ed-4b87-9091-d843437600b8",
+      "chapter_id": null,
+      "title": null,
+      "body": "O castelo é corrupção, mentira e traição — e Hamlet lentamente se torna parecido com o mundo que tenta combater.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-06T20:14:38.632475+00:00",
+      "themes": [
+        {
+          "id": "a0f9dbbf-a109-43ff-8705-77331c7498d3",
+          "slug": "ambiente",
+          "label": "Ambiente"
+        },
+        {
+          "id": "aedd75c6-593e-47fd-b31a-d9a8e4206af9",
+          "slug": "identidade",
+          "label": "Identidade"
+        }
+      ]
+    },
+    {
+      "id": "1145a9e9-46b9-4a9c-aec3-56f63344df26",
+      "book_id": "03cb8961-52ed-4b87-9091-d843437600b8",
+      "chapter_id": null,
+      "title": null,
+      "body": "Cercado de gente, Hamlet não confia em ninguém — o isolamento não é ausência de pessoas, é ausência de confiança.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-06T20:14:38.632475+00:00",
+      "themes": [
+        {
+          "id": "175dbfb8-35e2-403c-b63c-d41f7c129c1d",
+          "slug": "isolamento",
+          "label": "Isolamento"
+        },
+        {
+          "id": "3a0521ac-344e-488a-a9d5-9780e88517a8",
+          "slug": "confianca",
+          "label": "Confiança"
+        }
+      ]
+    },
+    {
+      "id": "c41cae83-dd05-485b-ba81-f5b565382a4b",
+      "book_id": "03cb8961-52ed-4b87-9091-d843437600b8",
+      "chapter_id": null,
+      "title": null,
+      "body": "O amor por Ofélia é destruído pela obsessão, política e vingança — o afeto não sobrevive ao cálculo.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-06T20:14:38.632475+00:00",
+      "themes": [
+        {
+          "id": "38202cbd-e3ab-4aa6-9fe4-d7a7a77c60ef",
+          "slug": "amor",
+          "label": "Amor"
+        },
+        {
+          "id": "0e291322-2d47-485e-bef4-c46543d059e6",
+          "slug": "sofrimento",
+          "label": "Sofrimento"
+        }
+      ]
+    },
+    {
+      "id": "8638048a-47c3-42fd-a21f-f67d299460ec",
+      "book_id": "03cb8961-52ed-4b87-9091-d843437600b8",
+      "chapter_id": null,
+      "title": null,
+      "body": "Hamlet combate assassinatos matando — tenta curar a violência com violência e só a multiplica.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-06T20:14:38.632475+00:00",
+      "themes": [
+        {
+          "id": "c6f18589-65c2-40d9-ac39-b63d391ddf29",
+          "slug": "acao",
+          "label": "Ação"
+        },
+        {
+          "id": "0e291322-2d47-485e-bef4-c46543d059e6",
+          "slug": "sofrimento",
+          "label": "Sofrimento"
+        }
+      ]
+    },
+    {
+      "id": "c1093ed3-ec2a-4682-938b-bbe06137ba8f",
+      "book_id": "03cb8961-52ed-4b87-9091-d843437600b8",
+      "chapter_id": null,
+      "title": null,
+      "body": "Hamlet pensa, analisa, duvida e demora a agir — o excesso de razão paralisa tanto quanto o excesso de impulso.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-06T20:14:38.632475+00:00",
+      "themes": [
+        {
+          "id": "2a262e8b-ce32-4702-8252-89ecadd6d9ea",
+          "slug": "razao",
+          "label": "Razão"
+        },
+        {
+          "id": "c6f18589-65c2-40d9-ac39-b63d391ddf29",
+          "slug": "acao",
+          "label": "Ação"
+        }
+      ]
+    },
+    {
+      "id": "77af0d00-4bbd-4934-8446-f84a98daa331",
+      "book_id": "03cb8961-52ed-4b87-9091-d843437600b8",
+      "chapter_id": null,
+      "title": null,
+      "body": "Príncipe com enorme poder, e ainda assim prisioneiro da própria missão — ter poder não é ser livre.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-06T20:14:38.632475+00:00",
+      "themes": [
+        {
+          "id": "acb7749b-1dc3-480d-9076-7c30d06bf646",
+          "slug": "liberdade",
+          "label": "Liberdade"
+        },
+        {
+          "id": "aedd75c6-593e-47fd-b31a-d9a8e4206af9",
+          "slug": "identidade",
+          "label": "Identidade"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "1810f2a1-c614-438b-9b9d-37b7eaf10c94",
+      "source_id": "cf851a6e-44f5-425e-9f71-3a730435bf2e",
+      "target_id": "63e7445a-183e-4464-bf4b-ee87972e1aa6",
+      "kind": "mesma_ideia",
+      "description": null,
+      "created_at": "2026-07-06T20:14:38.632475+00:00"
+    },
+    {
+      "id": "b40b5bd5-75a6-4ff5-880d-7da9971fd21c",
+      "source_id": "cf851a6e-44f5-425e-9f71-3a730435bf2e",
+      "target_id": "ca772c96-4ae3-4e3f-b7ab-d3372775e86c",
+      "kind": "mesma_ideia",
+      "description": null,
+      "created_at": "2026-07-06T20:14:38.632475+00:00"
+    },
+    {
+      "id": "a5ac3113-b1ba-429d-a1ed-c76ec449c6f5",
+      "source_id": "63e7445a-183e-4464-bf4b-ee87972e1aa6",
+      "target_id": "ca772c96-4ae3-4e3f-b7ab-d3372775e86c",
+      "kind": "mesma_ideia",
+      "description": null,
+      "created_at": "2026-07-06T20:14:38.632475+00:00"
+    },
+    {
+      "id": "54055cd6-a3de-4724-b2cd-6dcadd9b239e",
+      "source_id": "781c63b9-4964-4f68-b6e6-80b1b6811ccf",
+      "target_id": "3e9c35de-b543-4dfb-ae3e-7adbd1069e35",
+      "kind": "mesma_ideia",
+      "description": null,
+      "created_at": "2026-07-06T20:14:38.632475+00:00"
+    },
+    {
+      "id": "0128cc7f-c05e-4a73-8588-29b459e3d6a8",
+      "source_id": "781c63b9-4964-4f68-b6e6-80b1b6811ccf",
+      "target_id": "c41cae83-dd05-485b-ba81-f5b565382a4b",
+      "kind": "mesma_ideia",
+      "description": null,
+      "created_at": "2026-07-06T20:14:38.632475+00:00"
+    },
+    {
+      "id": "1a9e46e8-0d35-429c-8997-1610b3b98c1e",
+      "source_id": "3e9c35de-b543-4dfb-ae3e-7adbd1069e35",
+      "target_id": "c41cae83-dd05-485b-ba81-f5b565382a4b",
+      "kind": "mesma_ideia",
+      "description": null,
+      "created_at": "2026-07-06T20:14:38.632475+00:00"
+    },
+    {
+      "id": "175ff16e-db45-4444-a1f5-d9d3fc5fe073",
+      "source_id": "7fa79f11-5f02-460e-93d5-1513bf0991a4",
+      "target_id": "c0438265-7971-4cca-bb2a-d5b7275b7382",
+      "kind": "mesma_ideia",
+      "description": null,
+      "created_at": "2026-07-06T20:14:38.632475+00:00"
+    },
+    {
+      "id": "59fd7c5c-3b82-432d-bff6-9da8b3275d55",
+      "source_id": "7fa79f11-5f02-460e-93d5-1513bf0991a4",
+      "target_id": "1145a9e9-46b9-4a9c-aec3-56f63344df26",
+      "kind": "mesma_ideia",
+      "description": null,
+      "created_at": "2026-07-06T20:14:38.632475+00:00"
+    },
+    {
+      "id": "3ac95483-060f-4af1-802e-ceb952850d8f",
+      "source_id": "c0438265-7971-4cca-bb2a-d5b7275b7382",
+      "target_id": "1145a9e9-46b9-4a9c-aec3-56f63344df26",
+      "kind": "mesma_ideia",
+      "description": null,
+      "created_at": "2026-07-06T20:14:38.632475+00:00"
+    },
+    {
+      "id": "58f295d3-83a4-4ad8-acb6-cf78cd9766cf",
+      "source_id": "e759a214-5003-49b2-b530-a084d4bcd59d",
+      "target_id": "1145a9e9-46b9-4a9c-aec3-56f63344df26",
+      "kind": "mesma_ideia",
+      "description": null,
+      "created_at": "2026-07-06T20:14:38.632475+00:00"
+    },
+    {
+      "id": "a55588b0-0789-4acb-96d2-fefa57f3d8c0",
+      "source_id": "f8d0dbd5-4547-4f35-aafd-987f3ab78780",
+      "target_id": "c1093ed3-ec2a-4682-938b-bbe06137ba8f",
+      "kind": "conflita_com",
+      "description": "London faz da ação instintiva a via de sobrevivência; Shakespeare mostra a razão excessiva como paralisia. Instinto puro vs. razão paralisante — os dois polos entre os quais o Sonhador de Dostoiévski oscila.",
+      "created_at": "2026-07-06T20:14:38.632475+00:00"
+    },
+    {
+      "id": "d1066564-7ca6-45aa-b65e-043bd1bdbd6f",
+      "source_id": "c0438265-7971-4cca-bb2a-d5b7275b7382",
+      "target_id": "1bbdf350-763a-4f65-b1a3-26d4ef1abec9",
+      "kind": "e_precondicao_de",
+      "description": null,
+      "created_at": "2026-07-06T20:14:38.632475+00:00"
+    }
+  ]
+}

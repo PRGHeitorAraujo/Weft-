@@ -1,6 +1,12 @@
 import type { Book, Chapter, Edge, EdgeKind, Insight, InsightKind, ReadingSession, ReadingStatus, Suggestion, Theme, User } from "./types";
+import { demoApi } from "./demoApi";
 
-const API_URL = import.meta.env.VITE_API_URL ?? "http://localhost:8000";
+const configuredApiUrl = import.meta.env.VITE_API_URL as string | undefined;
+// Explicit opt-in only — never inferred from PROD/missing API URL, so a
+// misconfigured deploy fails loudly (network error) instead of silently
+// serving static demo data as if it were the real backend.
+export const DEMO_MODE = import.meta.env.VITE_DEMO_MODE === "true";
+const API_URL = configuredApiUrl ?? "http://localhost:8000";
 const TOKEN_KEY = "weft_token";
 
 export function getToken(): string | null {
@@ -38,7 +44,7 @@ async function request<T>(path: string, options: RequestInit = {}): Promise<T> {
   return res.json();
 }
 
-export const api = {
+const realApi = {
   signup: (email: string, password: string, display_name?: string) =>
     request<{ access_token: string; user: User }>("/auth/signup", { method: "POST", body: JSON.stringify({ email, password, display_name }) }),
   login: (email: string, password: string) =>
@@ -94,5 +100,7 @@ export const api = {
     request<ReadingSession>("/reading-sessions", { method: "POST", body: JSON.stringify(payload) }),
   listReadingSessions: () => request<ReadingSession[]>("/reading-sessions"),
 };
+
+export const api = DEMO_MODE ? demoApi : realApi;
 
 export { ApiError };

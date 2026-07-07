@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { DEMO_MODE } from "../api";
 import type { Book, Insight } from "../types";
 import { READING_STATUS, TYPES, excerpt, formatDate } from "../constants";
 import BookCover from "../components/BookCover";
@@ -54,18 +55,22 @@ export default function BookDetail({ book, insights, onBack, onOpenInsight, onOp
             <h1 style={{ margin: "4px 0 0", fontSize: 22, fontWeight: 600, letterSpacing: "-0.02em" }}>{book.title}</h1>
             {book.author && <div style={{ marginTop: 4, fontSize: 14, color: "var(--mut)" }}>{book.author}</div>}
           </div>
-          <button
-            onClick={startEdit}
-            style={{ flexShrink: 0, padding: "9px 16px", border: "1px solid var(--line)", borderRadius: 8, background: "#fff", color: "var(--ink)", fontSize: 13, fontWeight: 600 }}
-          >
-            Editar
-          </button>
-          <button
-            onClick={() => onStartReadingSession(book.id)}
-            style={{ flexShrink: 0, padding: "9px 16px", border: "1px solid var(--line)", borderRadius: 8, background: "#fff", color: "var(--ink)", fontSize: 13, fontWeight: 600 }}
-          >
-            Iniciar sessão de leitura
-          </button>
+          {!DEMO_MODE && (
+            <>
+              <button
+                onClick={startEdit}
+                style={{ flexShrink: 0, padding: "9px 16px", border: "1px solid var(--line)", borderRadius: 8, background: "#fff", color: "var(--ink)", fontSize: 13, fontWeight: 600 }}
+              >
+                Editar
+              </button>
+              <button
+                onClick={() => onStartReadingSession(book.id)}
+                style={{ flexShrink: 0, padding: "9px 16px", border: "1px solid var(--line)", borderRadius: 8, background: "#fff", color: "var(--ink)", fontSize: 13, fontWeight: 600 }}
+              >
+                Iniciar sessão de leitura
+              </button>
+            </>
+          )}
           <button
             onClick={() => onOpenGraph(book.id)}
             style={{ flexShrink: 0, padding: "9px 16px", border: "1px solid var(--accent-line)", borderRadius: 8, background: "var(--accent-soft)", color: "var(--accent)", fontSize: 13, fontWeight: 600 }}
@@ -74,7 +79,7 @@ export default function BookDetail({ book, insights, onBack, onOpenInsight, onOp
           </button>
         </div>
 
-        {editing && (
+        {!DEMO_MODE && editing && (
           <div style={{ marginTop: 20, padding: "18px 20px", background: "#fff", border: "1px solid var(--line)", borderRadius: 12, display: "flex", flexDirection: "column", gap: 12 }}>
             <div>
               <div style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.07em", color: "var(--faint)" }}>TÍTULO</div>

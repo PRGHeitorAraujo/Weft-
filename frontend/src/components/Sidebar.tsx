@@ -1,4 +1,5 @@
 import type { CSSProperties } from "react";
+import { DEMO_MODE } from "../api";
 import type { Screen, User } from "../types";
 import Logo from "./Logo";
 
@@ -27,13 +28,15 @@ export default function Sidebar({ screen, onNavigate, onNewInsight, user, insigh
       <div style={{ display: "flex", alignItems: "center", padding: "0 10px 18px" }}>
         <Logo size={24} />
       </div>
-      <button
-        onClick={onNewInsight}
-        style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 7, margin: "0 2px 18px", padding: "9px 12px", border: "none", borderRadius: 8, background: "var(--accent)", color: "#fff", fontSize: 13.5, fontWeight: 600, boxShadow: "0 1px 2px rgba(28,28,36,0.18)" }}
-      >
-        <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M7 1.5v11M1.5 7h11" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" /></svg>
-        Novo insight
-      </button>
+      {!DEMO_MODE && (
+        <button
+          onClick={onNewInsight}
+          style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 7, margin: "0 2px 18px", padding: "9px 12px", border: "none", borderRadius: 8, background: "var(--accent)", color: "#fff", fontSize: 13.5, fontWeight: 600, boxShadow: "0 1px 2px rgba(28,28,36,0.18)" }}
+        >
+          <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M7 1.5v11M1.5 7h11" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" /></svg>
+          Novo insight
+        </button>
+      )}
       <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
         <div onClick={() => onNavigate("home")} style={navStyle(screen === "home" || screen === "book" || screen === "reading")}>
           <svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M8 3.4C6.7 2.5 4.9 2.1 2.6 2.2v10.4c2.3-.1 4.1.3 5.4 1.2 1.3-.9 3.1-1.3 5.4-1.2V2.2C11.1 2.1 9.3 2.5 8 3.4Zm0 0v10.4" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" /></svg>
@@ -59,8 +62,8 @@ export default function Sidebar({ screen, onNavigate, onNewInsight, user, insigh
         </div>
         <button
           onClick={(e) => { e.stopPropagation(); onLogout(); }}
-          title="Sair"
-          aria-label="Sair"
+          title={DEMO_MODE ? "Trocar perfil" : "Sair"}
+          aria-label={DEMO_MODE ? "Trocar perfil" : "Sair"}
           style={{ flexShrink: 0, width: 26, height: 26, display: "flex", alignItems: "center", justifyContent: "center", border: "none", borderRadius: 6, background: "transparent", color: "var(--mut)", cursor: "pointer" }}
         >
           <svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M6.5 14H3.5a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h3M11 11l3-3-3-3M14 8H6" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" /></svg>

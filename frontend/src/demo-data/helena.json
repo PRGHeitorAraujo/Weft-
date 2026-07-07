@@ -1,0 +1,509 @@
+{
+  "user": {
+    "id": "06e323b3-9e03-4126-8fec-1045d087ee1d",
+    "email": "helena@example.com",
+    "display_name": "Helena"
+  },
+  "books": [
+    {
+      "id": "3d2915cc-e866-4151-b68b-4c5cb28f0e86",
+      "title": "O Estrangeiro",
+      "author": "Albert Camus",
+      "cover_url": null,
+      "reading_status": "lido",
+      "created_at": "2026-07-02T14:22:45.583182+00:00",
+      "chapters": [
+        {
+          "id": "523c02a9-081f-4f5b-8ead-3e418de2ffca",
+          "book_id": "3d2915cc-e866-4151-b68b-4c5cb28f0e86",
+          "label": "Parte II, cap. 3",
+          "position": null
+        },
+        {
+          "id": "14898897-f6cc-4937-8191-71f72491e797",
+          "book_id": "3d2915cc-e866-4151-b68b-4c5cb28f0e86",
+          "label": "Parte II, cap. 4",
+          "position": null
+        }
+      ]
+    },
+    {
+      "id": "18e4c263-be3b-4de9-adbf-9e5843023a27",
+      "title": "Crime e Castigo",
+      "author": "Fiódor Dostoiévski",
+      "cover_url": null,
+      "reading_status": "lendo",
+      "created_at": "2026-07-02T14:22:45.583182+00:00",
+      "chapters": [
+        {
+          "id": "5f2f0b52-a523-4187-bffd-d0f3d3fafe6f",
+          "book_id": "18e4c263-be3b-4de9-adbf-9e5843023a27",
+          "label": "Parte IV, cap. 4",
+          "position": null
+        },
+        {
+          "id": "2e45ad51-d396-4b17-b219-0847da9e0d93",
+          "book_id": "18e4c263-be3b-4de9-adbf-9e5843023a27",
+          "label": "Parte II, cap. 1",
+          "position": null
+        },
+        {
+          "id": "7cd45416-fdfc-4f2f-8607-7bad6d3b0aca",
+          "book_id": "18e4c263-be3b-4de9-adbf-9e5843023a27",
+          "label": "Parte I, cap. 6",
+          "position": null
+        },
+        {
+          "id": "19d9961b-eeaf-4884-8b68-0e300daa72ef",
+          "book_id": "18e4c263-be3b-4de9-adbf-9e5843023a27",
+          "label": "Parte IV, cap. 5",
+          "position": null
+        },
+        {
+          "id": "c40427c4-f1f1-454e-b819-4c934075f20a",
+          "book_id": "18e4c263-be3b-4de9-adbf-9e5843023a27",
+          "label": "part 1 - cap 1",
+          "position": null
+        }
+      ]
+    },
+    {
+      "id": "0b0bbd7c-0090-4842-8fc9-ec33362b6a0f",
+      "title": "O Processo",
+      "author": "Franz Kafka",
+      "cover_url": null,
+      "reading_status": "lido",
+      "created_at": "2026-07-02T14:22:45.583182+00:00",
+      "chapters": [
+        {
+          "id": "d4cf122b-28fa-4e4b-9a46-b6eaf5fb7055",
+          "book_id": "0b0bbd7c-0090-4842-8fc9-ec33362b6a0f",
+          "label": "Capítulo 2",
+          "position": null
+        },
+        {
+          "id": "e7543319-a5dd-459b-91ff-4565e1717f80",
+          "book_id": "0b0bbd7c-0090-4842-8fc9-ec33362b6a0f",
+          "label": "Capítulo 7",
+          "position": null
+        }
+      ]
+    }
+  ],
+  "themes": [
+    {
+      "id": "17a40d3d-a498-46c6-bd66-db5016da1b86",
+      "slug": "culpa",
+      "label": "Culpa"
+    },
+    {
+      "id": "eae3d3fc-03a4-43a1-9866-2c5a6a3e5928",
+      "slug": "consciencia",
+      "label": "Consciência"
+    },
+    {
+      "id": "78ae8273-3413-4bde-93fc-24bf1f6013fd",
+      "slug": "moral",
+      "label": "Moral"
+    },
+    {
+      "id": "d0744404-2110-488a-8ad2-5cfb074c861a",
+      "slug": "punicao",
+      "label": "Punição"
+    },
+    {
+      "id": "175dbfb8-35e2-403c-b63c-d41f7c129c1d",
+      "slug": "isolamento",
+      "label": "Isolamento"
+    },
+    {
+      "id": "aedd75c6-593e-47fd-b31a-d9a8e4206af9",
+      "slug": "identidade",
+      "label": "Identidade"
+    },
+    {
+      "id": "3bf12ef0-934d-49bd-975a-16336f2d096a",
+      "slug": "poder",
+      "label": "Poder"
+    },
+    {
+      "id": "0e291322-2d47-485e-bef4-c46543d059e6",
+      "slug": "sofrimento",
+      "label": "Sofrimento"
+    },
+    {
+      "id": "2ddbf111-d3e0-4db2-8f4e-408b9429ff6f",
+      "slug": "compaixao",
+      "label": "Compaixão"
+    },
+    {
+      "id": "2a262e8b-ce32-4702-8252-89ecadd6d9ea",
+      "slug": "razao",
+      "label": "Razão"
+    },
+    {
+      "id": "82d7190e-818e-427b-ad09-c22e996a3733",
+      "slug": "medo",
+      "label": "Medo"
+    },
+    {
+      "id": "abfbc107-783c-472a-82e4-499aa36e9a18",
+      "slug": "ego",
+      "label": "Ego"
+    },
+    {
+      "id": "0fa8086f-220f-4074-a418-110e623d8d85",
+      "slug": "disciplina",
+      "label": "Disciplina"
+    },
+    {
+      "id": "71c544be-86cb-4b38-a754-0cae1abda757",
+      "slug": "lideranca",
+      "label": "Liderança"
+    },
+    {
+      "id": "7098acea-a6a9-4fba-951a-a861278a3ae2",
+      "slug": "proposito",
+      "label": "Propósito"
+    },
+    {
+      "id": "3ec9df17-f6ac-458b-813d-f1ffeb03be5e",
+      "slug": "autocontrole",
+      "label": "Autocontrole"
+    },
+    {
+      "id": "2245f69c-e13f-45b5-848e-d79688d92909",
+      "slug": "competencia",
+      "label": "Competência"
+    },
+    {
+      "id": "10530066-72f0-48df-9ff7-0a6d930515c5",
+      "slug": "responsabilidade",
+      "label": "Responsabilidade"
+    },
+    {
+      "id": "a0f9dbbf-a109-43ff-8705-77331c7498d3",
+      "slug": "ambiente",
+      "label": "Ambiente"
+    },
+    {
+      "id": "6f6ef4dc-744b-4b32-b021-59ccf3a7e070",
+      "slug": "instinto",
+      "label": "Instinto"
+    },
+    {
+      "id": "c6f18589-65c2-40d9-ac39-b63d391ddf29",
+      "slug": "acao",
+      "label": "Ação"
+    },
+    {
+      "id": "62c5dc8f-0b98-4d8e-8f2e-42bc3abeba2c",
+      "slug": "esperanca",
+      "label": "Esperança"
+    },
+    {
+      "id": "3a0521ac-344e-488a-a9d5-9780e88517a8",
+      "slug": "confianca",
+      "label": "Confiança"
+    },
+    {
+      "id": "acb7749b-1dc3-480d-9076-7c30d06bf646",
+      "slug": "liberdade",
+      "label": "Liberdade"
+    },
+    {
+      "id": "38202cbd-e3ab-4aa6-9fe4-d7a7a77c60ef",
+      "slug": "amor",
+      "label": "Amor"
+    }
+  ],
+  "insights": [
+    {
+      "id": "07d40893-b3b1-4d22-975a-c422b7881b68",
+      "book_id": "3d2915cc-e866-4151-b68b-4c5cb28f0e86",
+      "chapter_id": "14898897-f6cc-4937-8191-71f72491e797",
+      "title": "O tribunal julga o caráter, não o ato",
+      "body": "O julgamento de Meursault gira em torno do café no velório da mãe, não do tiro. A moral pública precisa de uma narrativa, não de um fato.",
+      "kind": "observacao",
+      "free_tags": [
+        "performance-social"
+      ],
+      "created_at": "2026-07-02T14:22:45.583182+00:00",
+      "themes": [
+        {
+          "id": "78ae8273-3413-4bde-93fc-24bf1f6013fd",
+          "slug": "moral",
+          "label": "Moral"
+        },
+        {
+          "id": "d0744404-2110-488a-8ad2-5cfb074c861a",
+          "slug": "punicao",
+          "label": "Punição"
+        }
+      ]
+    },
+    {
+      "id": "1c2ab069-323d-4c64-9830-f0ede532cbc7",
+      "book_id": "0b0bbd7c-0090-4842-8fc9-ec33362b6a0f",
+      "chapter_id": "e7543319-a5dd-459b-91ff-4565e1717f80",
+      "title": "Culpa sem acusador é infinita?",
+      "body": "Quando ninguém formula a acusação, a defesa nunca termina. A culpa sem lei seria mais pesada que a culpa com sentença?",
+      "kind": "pergunta",
+      "free_tags": [],
+      "created_at": "2026-07-02T14:22:45.583182+00:00",
+      "themes": [
+        {
+          "id": "17a40d3d-a498-46c6-bd66-db5016da1b86",
+          "slug": "culpa",
+          "label": "Culpa"
+        },
+        {
+          "id": "d0744404-2110-488a-8ad2-5cfb074c861a",
+          "slug": "punicao",
+          "label": "Punição"
+        }
+      ]
+    },
+    {
+      "id": "817dc0e8-edac-4e82-b717-4f098ad3553b",
+      "book_id": "18e4c263-be3b-4de9-adbf-9e5843023a27",
+      "chapter_id": "5f2f0b52-a523-4187-bffd-d0f3d3fafe6f",
+      "title": "A confissão como alívio, não derrota",
+      "body": "Quando Raskólnikov finalmente confessa a Sônia, o tom não é de derrota — é de descanso. A confissão aparece como o único gesto capaz de devolver o corpo ao presente: a febre cede, o tempo volta a andar.\n\nIsso inverte a lógica do castigo: confessar não é o início da pena, é o fim dela. Talvez o verdadeiro castigo fosse a impossibilidade de contar.",
+      "kind": "hipotese",
+      "free_tags": [
+        "confissão",
+        "corpo"
+      ],
+      "created_at": "2026-07-02T14:22:45.583182+00:00",
+      "themes": [
+        {
+          "id": "17a40d3d-a498-46c6-bd66-db5016da1b86",
+          "slug": "culpa",
+          "label": "Culpa"
+        },
+        {
+          "id": "eae3d3fc-03a4-43a1-9866-2c5a6a3e5928",
+          "slug": "consciencia",
+          "label": "Consciência"
+        },
+        {
+          "id": "2ddbf111-d3e0-4db2-8f4e-408b9429ff6f",
+          "slug": "compaixao",
+          "label": "Compaixão"
+        }
+      ]
+    },
+    {
+      "id": "1cff3cda-7c46-4c15-a3de-17efd76a8c57",
+      "book_id": "18e4c263-be3b-4de9-adbf-9e5843023a27",
+      "chapter_id": "5f2f0b52-a523-4187-bffd-d0f3d3fafe6f",
+      "title": "Sônia carrega a culpa dos outros",
+      "body": "Sônia sofre sem ter culpa própria; a compaixão dela funciona como pré-condição para a confissão de Raskólnikov. Ninguém confessa ao vazio.",
+      "kind": "hipotese",
+      "free_tags": [],
+      "created_at": "2026-07-02T14:22:45.583182+00:00",
+      "themes": [
+        {
+          "id": "17a40d3d-a498-46c6-bd66-db5016da1b86",
+          "slug": "culpa",
+          "label": "Culpa"
+        },
+        {
+          "id": "0e291322-2d47-485e-bef4-c46543d059e6",
+          "slug": "sofrimento",
+          "label": "Sofrimento"
+        },
+        {
+          "id": "2ddbf111-d3e0-4db2-8f4e-408b9429ff6f",
+          "slug": "compaixao",
+          "label": "Compaixão"
+        }
+      ]
+    },
+    {
+      "id": "2f5ddf4b-26e6-4054-8d44-9d8e46baedb6",
+      "book_id": "18e4c263-be3b-4de9-adbf-9e5843023a27",
+      "chapter_id": "7cd45416-fdfc-4f2f-8607-7bad6d3b0aca",
+      "title": "O castigo começa antes do crime",
+      "body": "A angústia dos dias que antecedem o assassinato sugere que o castigo do título não é a Sibéria — é a consciência antecipando a pena.",
+      "kind": "hipotese",
+      "free_tags": [
+        "culpa-preventiva"
+      ],
+      "created_at": "2026-07-02T14:22:45.583182+00:00",
+      "themes": [
+        {
+          "id": "17a40d3d-a498-46c6-bd66-db5016da1b86",
+          "slug": "culpa",
+          "label": "Culpa"
+        },
+        {
+          "id": "d0744404-2110-488a-8ad2-5cfb074c861a",
+          "slug": "punicao",
+          "label": "Punição"
+        }
+      ]
+    },
+    {
+      "id": "3cbfeb08-44c1-4d13-974f-7356c40df767",
+      "book_id": "18e4c263-be3b-4de9-adbf-9e5843023a27",
+      "chapter_id": "19d9961b-eeaf-4884-8b68-0e300daa72ef",
+      "title": "Porfiri não é consciência benevolente",
+      "body": "A leitura comum trata Porfiri como guia moral. Discordo: é coerção psicológica com método — o Estado terceirizando a confissão.",
+      "kind": "discordancia",
+      "free_tags": [],
+      "created_at": "2026-07-02T14:22:45.583182+00:00",
+      "themes": [
+        {
+          "id": "78ae8273-3413-4bde-93fc-24bf1f6013fd",
+          "slug": "moral",
+          "label": "Moral"
+        },
+        {
+          "id": "3bf12ef0-934d-49bd-975a-16336f2d096a",
+          "slug": "poder",
+          "label": "Poder"
+        }
+      ]
+    },
+    {
+      "id": "5f65cf50-d0b2-4963-b206-7221514861c4",
+      "book_id": "18e4c263-be3b-4de9-adbf-9e5843023a27",
+      "chapter_id": "2e45ad51-d396-4b17-b219-0847da9e0d93",
+      "title": "A febre como confissão do corpo",
+      "body": "Raskólnikov adoece antes de qualquer suspeita formal. O corpo confessa o que a boca nega: a febre é o primeiro tribunal, anterior à lei.",
+      "kind": "observacao",
+      "free_tags": [
+        "corpo"
+      ],
+      "created_at": "2026-07-02T14:22:45.583182+00:00",
+      "themes": [
+        {
+          "id": "17a40d3d-a498-46c6-bd66-db5016da1b86",
+          "slug": "culpa",
+          "label": "Culpa"
+        },
+        {
+          "id": "eae3d3fc-03a4-43a1-9866-2c5a6a3e5928",
+          "slug": "consciencia",
+          "label": "Consciência"
+        }
+      ]
+    },
+    {
+      "id": "cb9a1605-b782-4816-8a17-c167dbba73aa",
+      "book_id": "3d2915cc-e866-4151-b68b-4c5cb28f0e86",
+      "chapter_id": "523c02a9-081f-4f5b-8ead-3e418de2ffca",
+      "title": "Meursault é o anti-Raskólnikov",
+      "body": "Dois assassinos, dois tribunais: um é esmagado pela consciência antes da lei; o outro é condenado pela lei por não performar consciência.",
+      "kind": "conexao",
+      "free_tags": [
+        "absurdo"
+      ],
+      "created_at": "2026-07-02T14:22:45.583182+00:00",
+      "themes": [
+        {
+          "id": "17a40d3d-a498-46c6-bd66-db5016da1b86",
+          "slug": "culpa",
+          "label": "Culpa"
+        },
+        {
+          "id": "eae3d3fc-03a4-43a1-9866-2c5a6a3e5928",
+          "slug": "consciencia",
+          "label": "Consciência"
+        },
+        {
+          "id": "aedd75c6-593e-47fd-b31a-d9a8e4206af9",
+          "slug": "identidade",
+          "label": "Identidade"
+        }
+      ]
+    },
+    {
+      "id": "dc116966-f8ea-41ec-be8a-74af2407e11c",
+      "book_id": "0b0bbd7c-0090-4842-8fc9-ec33362b6a0f",
+      "chapter_id": "d4cf122b-28fa-4e4b-9a46-b6eaf5fb7055",
+      "title": "K. organiza a vida ao redor da acusação",
+      "body": "Josef K. nunca nega a culpa em termos absolutos. Ele administra o processo como quem aceita, desde o início, que deve algo a alguém.",
+      "kind": "observacao",
+      "free_tags": [
+        "burocracia"
+      ],
+      "created_at": "2026-07-02T14:22:45.583182+00:00",
+      "themes": [
+        {
+          "id": "17a40d3d-a498-46c6-bd66-db5016da1b86",
+          "slug": "culpa",
+          "label": "Culpa"
+        },
+        {
+          "id": "3bf12ef0-934d-49bd-975a-16336f2d096a",
+          "slug": "poder",
+          "label": "Poder"
+        }
+      ]
+    },
+    {
+      "id": "c172c59c-1489-479b-a488-d730ac6970fb",
+      "book_id": "18e4c263-be3b-4de9-adbf-9e5843023a27",
+      "chapter_id": null,
+      "title": null,
+      "body": "Insight capturado durante a sessão de teste automatizado.",
+      "kind": "observacao",
+      "free_tags": [],
+      "created_at": "2026-07-04T13:21:00.082042+00:00",
+      "themes": []
+    }
+  ],
+  "edges": [
+    {
+      "id": "e4d3ab53-5929-486e-b6c0-effd897df189",
+      "source_id": "5f65cf50-d0b2-4963-b206-7221514861c4",
+      "target_id": "2f5ddf4b-26e6-4054-8d44-9d8e46baedb6",
+      "kind": "desenvolve",
+      "description": null,
+      "created_at": "2026-07-02T14:22:45.583182+00:00"
+    },
+    {
+      "id": "345cafab-c9b5-4fa9-b9e5-02385424ac3e",
+      "source_id": "dc116966-f8ea-41ec-be8a-74af2407e11c",
+      "target_id": "1c2ab069-323d-4c64-9830-f0ede532cbc7",
+      "kind": "desenvolve",
+      "description": null,
+      "created_at": "2026-07-02T14:22:45.583182+00:00"
+    },
+    {
+      "id": "726f6492-47f3-4cf8-ad05-102f0f262191",
+      "source_id": "2f5ddf4b-26e6-4054-8d44-9d8e46baedb6",
+      "target_id": "1c2ab069-323d-4c64-9830-f0ede532cbc7",
+      "kind": "mesma_ideia",
+      "description": null,
+      "created_at": "2026-07-02T14:22:45.583182+00:00"
+    },
+    {
+      "id": "d8f3776c-bac7-4355-8da5-bb63aed4550f",
+      "source_id": "817dc0e8-edac-4e82-b717-4f098ad3553b",
+      "target_id": "5f65cf50-d0b2-4963-b206-7221514861c4",
+      "kind": "mesma_ideia",
+      "description": null,
+      "created_at": "2026-07-02T14:22:45.583182+00:00"
+    },
+    {
+      "id": "8b9c25c0-296d-4db2-bcf9-b47f020d965b",
+      "source_id": "5f65cf50-d0b2-4963-b206-7221514861c4",
+      "target_id": "cb9a1605-b782-4816-8a17-c167dbba73aa",
+      "kind": "conflita_com",
+      "description": null,
+      "created_at": "2026-07-02T14:22:45.583182+00:00"
+    },
+    {
+      "id": "f2ac946d-44ab-4143-b102-3cb25e18249e",
+      "source_id": "1cff3cda-7c46-4c15-a3de-17efd76a8c57",
+      "target_id": "817dc0e8-edac-4e82-b717-4f098ad3553b",
+      "kind": "e_precondicao_de",
+      "description": null,
+      "created_at": "2026-07-02T14:22:45.583182+00:00"
+    }
+  ]
+}

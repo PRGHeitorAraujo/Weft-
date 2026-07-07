@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { DEMO_MODE } from "../api";
 import type { Book, Insight, ReadingStatus } from "../types";
 import { READING_STATUS, TYPES, excerpt, formatDate } from "../constants";
 import BookCover from "../components/BookCover";
@@ -51,15 +52,19 @@ export default function Library({ insights, books, themeCount, userName, onOpen,
                 {lastBook.title} <span style={{ fontWeight: 400, color: "var(--mut)" }}>· {lastBook.author}</span>
               </div>
             </div>
-            <button onClick={() => onEditBook(lastBook.id)} style={{ flexShrink: 0, padding: "8px 14px", border: "1px solid var(--line)", borderRadius: 8, background: "#fff", color: "var(--ink)", fontSize: 13, fontWeight: 600 }}>
-              Editar
-            </button>
-            <button onClick={() => onStartReadingSession(lastBook.id)} style={{ flexShrink: 0, padding: "8px 14px", border: "1px solid var(--line)", borderRadius: 8, background: "#fff", color: "var(--ink)", fontSize: 13, fontWeight: 600 }}>
-              Iniciar sessão
-            </button>
-            <button onClick={onNewInsight} style={{ flexShrink: 0, padding: "8px 14px", border: "1px solid var(--accent-line)", borderRadius: 8, background: "var(--accent-soft)", color: "var(--accent)", fontSize: 13, fontWeight: 600 }}>
-              Registrar insight
-            </button>
+            {!DEMO_MODE && (
+              <>
+                <button onClick={() => onEditBook(lastBook.id)} style={{ flexShrink: 0, padding: "8px 14px", border: "1px solid var(--line)", borderRadius: 8, background: "#fff", color: "var(--ink)", fontSize: 13, fontWeight: 600 }}>
+                  Editar
+                </button>
+                <button onClick={() => onStartReadingSession(lastBook.id)} style={{ flexShrink: 0, padding: "8px 14px", border: "1px solid var(--line)", borderRadius: 8, background: "#fff", color: "var(--ink)", fontSize: 13, fontWeight: 600 }}>
+                  Iniciar sessão
+                </button>
+                <button onClick={onNewInsight} style={{ flexShrink: 0, padding: "8px 14px", border: "1px solid var(--accent-line)", borderRadius: 8, background: "var(--accent-soft)", color: "var(--accent)", fontSize: 13, fontWeight: 600 }}>
+                  Registrar insight
+                </button>
+              </>
+            )}
           </div>
         )}
 
@@ -118,7 +123,7 @@ export default function Library({ insights, books, themeCount, userName, onOpen,
           </>
         )}
 
-        {books.length > 0 && (
+        {!DEMO_MODE && books.length > 0 && (
           <div style={{ marginTop: 40, paddingTop: 20, borderTop: "1px solid var(--line)", display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap" }}>
             <span style={{ fontSize: 12.5, fontWeight: 600, color: "var(--mut)" }}>Status de leitura</span>
             <select

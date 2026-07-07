@@ -1,4 +1,5 @@
 import { useState, type MouseEvent } from "react";
+import { DEMO_MODE } from "../api";
 import type { Book, Insight, InsightKind } from "../types";
 import { TYPES, excerpt, formatDate } from "../constants";
 import { useDeleteInsight } from "../queries";
@@ -54,13 +55,15 @@ export default function Insights({ insights, books, onOpen }: Props) {
                   <span style={{ width: 7, height: 7, borderRadius: "50%", background: ty.color, flexShrink: 0 }} />
                   <span style={{ fontSize: 10.5, fontWeight: 700, letterSpacing: "0.08em", color: "var(--mut)" }}>{ty.label}</span>
                   <span style={{ marginLeft: "auto", fontSize: 12, color: "var(--faint)" }}>{formatDate(it.created_at)}</span>
-                  <button
-                    onClick={(e) => handleDelete(e, it.id)}
-                    title="Excluir insight"
-                    style={{ padding: "2px 7px", border: "1px solid var(--line)", borderRadius: 6, background: "#fff", color: "var(--faint)", fontSize: 12, lineHeight: 1 }}
-                  >
-                    ×
-                  </button>
+                  {!DEMO_MODE && (
+                    <button
+                      onClick={(e) => handleDelete(e, it.id)}
+                      title="Excluir insight"
+                      style={{ padding: "2px 7px", border: "1px solid var(--line)", borderRadius: 6, background: "#fff", color: "var(--faint)", fontSize: 12, lineHeight: 1 }}
+                    >
+                      ×
+                    </button>
+                  )}
                 </div>
                 <div style={{ marginTop: 7, fontSize: 15, fontWeight: 600, letterSpacing: "-0.01em" }}>{it.title || excerpt(it.body, 60)}</div>
                 <p style={{ margin: "6px 0 0", fontFamily: "var(--prose)", fontSize: 14, lineHeight: 1.55, color: "#43434C", display: "-webkit-box", WebkitLineClamp: 3, WebkitBoxOrient: "vertical", overflow: "hidden" }}>{excerpt(it.body)}</p>

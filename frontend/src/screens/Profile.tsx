@@ -1,3 +1,4 @@
+import { DEMO_MODE } from "../api";
 import type { Book, Insight, ReadingStatus, User } from "../types";
 import { READING_STATUS, formatDuration } from "../constants";
 import { useReadingSessions } from "../queries";
@@ -46,7 +47,7 @@ export default function Profile({ user, books, insights, onOpenBook, onNavigateI
             onClick={onLogout}
             style={{ flexShrink: 0, padding: "9px 16px", border: "1px solid var(--line)", borderRadius: 8, background: "#fff", color: "var(--mut)", fontSize: 13, fontWeight: 600 }}
           >
-            Sair da conta
+            {DEMO_MODE ? "Trocar perfil" : "Sair da conta"}
           </button>
         </div>
 
