@@ -36,7 +36,15 @@ function fetchWikiThumb(page: string): Promise<string | null> {
     .catch(() => null);
 }
 
-export default function AuthScreen() {
+interface Props {
+  // Demo mode: this screen is a visual cover only — no real auth form, no
+  // network calls to a backend. A single CTA hands off to the profile
+  // picker instead of logging in.
+  demoMode?: boolean;
+  onEnterDemo?: () => void;
+}
+
+export default function AuthScreen({ demoMode = false, onEnterDemo }: Props) {
   const { login, signup } = useAuth();
   const [mode, setMode] = useState<"login" | "signup">("login");
   const [email, setEmail] = useState("");
@@ -198,37 +206,53 @@ export default function AuthScreen() {
           — conectadas.
         </p>
 
-        <div style={{ marginTop: 30, display: "grid", gridTemplateColumns: "1fr 1fr", gap: 3, padding: 3, background: "var(--panel)", border: "1px solid var(--line)", borderRadius: 9 }}>
-          <button onClick={() => { setMode("login"); setError(null); }} style={tabStyle(mode === "login")}>Entrar</button>
-          <button onClick={() => { setMode("signup"); setError(null); }} style={tabStyle(mode === "signup")}>Criar conta</button>
-        </div>
-
-        <form onSubmit={submit} style={{ marginTop: 20, display: "flex", flexDirection: "column", gap: 12 }}>
-          {mode === "signup" && (
-            <div>
-              <label style={label}>Nome</label>
-              <input style={input} value={displayName} onChange={(e) => setDisplayName(e.target.value)} placeholder="Como devemos te chamar" />
+        {demoMode ? (
+          <div style={{ marginTop: 30 }}>
+            <button
+              onClick={onEnterDemo}
+              style={{ width: "100%", padding: "12px 0", border: "none", borderRadius: 8, background: "var(--accent)", color: "#fff", fontSize: 14.5, fontWeight: 600, cursor: "pointer", boxShadow: "0 1px 2px rgba(28,28,36,0.18)" }}
+            >
+              Explorar a demo →
+            </button>
+            <p style={{ margin: "12px 0 0", textAlign: "center", fontSize: 12, color: "var(--faint)" }}>
+              Demonstração somente leitura, sem cadastro — escolha um dos 3 perfis de exemplo.
+            </p>
+          </div>
+        ) : (
+          <>
+            <div style={{ marginTop: 30, display: "grid", gridTemplateColumns: "1fr 1fr", gap: 3, padding: 3, background: "var(--panel)", border: "1px solid var(--line)", borderRadius: 9 }}>
+              <button onClick={() => { setMode("login"); setError(null); }} style={tabStyle(mode === "login")}>Entrar</button>
+              <button onClick={() => { setMode("signup"); setError(null); }} style={tabStyle(mode === "signup")}>Criar conta</button>
             </div>
-          )}
-          <div>
-            <label style={label}>E-mail</label>
-            <input style={input} type="email" required value={email} onChange={(e) => setEmail(e.target.value)} placeholder="voce@exemplo.com" />
-          </div>
-          <div>
-            <label style={label}>Senha</label>
-            <input style={input} type="password" required minLength={8} value={password} onChange={(e) => setPassword(e.target.value)} placeholder={mode === "login" ? "Sua senha" : "Mínimo de 8 caracteres"} />
-          </div>
 
-          {error && <p style={{ margin: 0, fontSize: 13, color: "#B91C1C" }}>{error}</p>}
+            <form onSubmit={submit} style={{ marginTop: 20, display: "flex", flexDirection: "column", gap: 12 }}>
+              {mode === "signup" && (
+                <div>
+                  <label style={label}>Nome</label>
+                  <input style={input} value={displayName} onChange={(e) => setDisplayName(e.target.value)} placeholder="Como devemos te chamar" />
+                </div>
+              )}
+              <div>
+                <label style={label}>E-mail</label>
+                <input style={input} type="email" required value={email} onChange={(e) => setEmail(e.target.value)} placeholder="voce@exemplo.com" />
+              </div>
+              <div>
+                <label style={label}>Senha</label>
+                <input style={input} type="password" required minLength={8} value={password} onChange={(e) => setPassword(e.target.value)} placeholder={mode === "login" ? "Sua senha" : "Mínimo de 8 caracteres"} />
+              </div>
 
-          <button
-            type="submit"
-            disabled={busy}
-            style={{ marginTop: 10, width: "100%", padding: "10px 0", border: "none", borderRadius: 8, background: "var(--accent)", color: "#fff", fontSize: 14, fontWeight: 600, cursor: "pointer", boxShadow: "0 1px 2px rgba(28,28,36,0.18)", opacity: busy ? 0.7 : 1 }}
-          >
-            {busy ? "Aguarde…" : mode === "login" ? "Entrar" : "Criar conta"}
-          </button>
-        </form>
+              {error && <p style={{ margin: 0, fontSize: 13, color: "#B91C1C" }}>{error}</p>}
+
+              <button
+                type="submit"
+                disabled={busy}
+                style={{ marginTop: 10, width: "100%", padding: "10px 0", border: "none", borderRadius: 8, background: "var(--accent)", color: "#fff", fontSize: 14, fontWeight: 600, cursor: "pointer", boxShadow: "0 1px 2px rgba(28,28,36,0.18)", opacity: busy ? 0.7 : 1 }}
+              >
+                {busy ? "Aguarde…" : mode === "login" ? "Entrar" : "Criar conta"}
+              </button>
+            </form>
+          </>
+        )}
       </div>
     </div>
   );

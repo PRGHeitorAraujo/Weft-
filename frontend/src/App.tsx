@@ -166,10 +166,17 @@ function AppShell() {
 
 function Gate() {
   const { user, loading } = useAuth();
+  // Demo mode shows the real AuthScreen's visual cover first (background
+  // graph, tagline) as the product's first impression, then hands off to
+  // the profile picker — never a functional login.
+  const [demoEntered, setDemoEntered] = useState(false);
   if (loading) {
     return <div style={{ display: "flex", height: "100vh", alignItems: "center", justifyContent: "center", color: "var(--mut)" }}>Carregando…</div>;
   }
-  if (!user) return DEMO_MODE ? <DemoProfilePicker /> : <AuthScreen />;
+  if (!user) {
+    if (!DEMO_MODE) return <AuthScreen />;
+    return demoEntered ? <DemoProfilePicker /> : <AuthScreen demoMode onEnterDemo={() => setDemoEntered(true)} />;
+  }
   return <AppShell />;
 }
 
